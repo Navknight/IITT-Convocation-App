@@ -45,7 +45,7 @@ function HomeTabs(){
           
           borderRadius: 100,
           marginHorizontal: 20,
-          backgroundColor: themeColors.bgLight,
+          backgroundColor: themeColors.bgDark,
 
         },
         tabBarItemStyle: {
@@ -68,17 +68,17 @@ const menuIcons = (route, focused)=> {
   
 
   if (route.name === 'home') {
-    icon =  focused? <HomeSolid size="30" color={themeColors.bgLight} /> : <HomeOutline size="30" strokeWidth={2} color="white" />
+    icon =  focused? <HomeSolid size="30" color={themeColors.bgDark} /> : <HomeOutline size="30" strokeWidth={2} color="white" />
   } else if (route.name === 'information') {
-    icon =  focused? <InfoSolid size="30" color={themeColors.bgLight} /> : <InfoOutline size="30" strokeWidth={2} color="white" />
+    icon =  focused? <InfoSolid size="30" color={themeColors.bgDark} /> : <InfoOutline size="30" strokeWidth={2} color="white" />
   }else if(route.name==='stream'){
-    icon =  focused? <StreamSolid size="30" color={themeColors.bgLight} /> : <StreamOutline size="30" strokeWidth={2} color="white" />
+    icon =  focused? <StreamSolid size="30" color={themeColors.bgDark} /> : <StreamOutline size="30" strokeWidth={2} color="white" />
   } else if(route.name==='contact'){
-    icon =  focused? <ContactSolid size="30" color={themeColors.bgLight} /> : <ContactOutline size="30" strokeWidth={2} color="white" />
+    icon =  focused? <ContactSolid size="30" color={themeColors.bgDark} /> : <ContactOutline size="30" strokeWidth={2} color="white" />
   }
 
   
-  let buttonClass = focused? "bg-white": "";
+  let buttonClass = focused? `bg-white`: "";
   return (
     <View className={"flex items-center rounded-full p-3 shadow " + buttonClass}>
       {icon}
