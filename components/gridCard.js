@@ -31,8 +31,8 @@ export default function GridCard(props) {
     }
 
     return (
-        <TouchableOpacity 
-            onPress={() => navigation.navigate('Product', {item: props.item})}
+        <TouchableOpacity
+            onPress={props.item.icon == 'film' ? () => navigation.navigate('Youtube') : () => navigation.navigate('Product', { item: props.item })}
         >
             <View style={{
                 borderRadius: 40,

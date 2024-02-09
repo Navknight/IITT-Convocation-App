@@ -28,6 +28,7 @@ export default function AppNavigation() {
       }}>
         <Stack.Screen name="Home" options={{headerShown: false}} component={HomeTabs} />
         <Stack.Screen name="Product" options={{headerShown: false}} component={ProductScreen} />
+        <Stack.Screen name='Youtube' options={{headerShown: false}} component={YouTubeLinkScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )
@@ -41,7 +42,7 @@ function HomeTabs(){
         tabBarShowLabel: false,
         tabBarIcon: ({ focused }) => menuIcons(route, focused),
         tabBarStyle: {
-          marginBottom: 20,
+          marginBottom: 10,
           height: 75,
           alignItems: 'center',
           
@@ -59,7 +60,6 @@ function HomeTabs(){
       >
       <Tab.Screen name="home" component={HomeScreen} />
       <Tab.Screen name="information" component={HomeScreen} />
-      <Tab.Screen name="stream" component={YouTubeLinkScreen} />
       <Tab.Screen name="contact" component={ContactUS} />
     </Tab.Navigator>
   )
@@ -73,8 +73,6 @@ const menuIcons = (route, focused)=> {
     icon =  focused? <HomeSolid size="30" color={themeColors.bgDark} /> : <HomeOutline size="30" strokeWidth={2} color="white" />
   } else if (route.name === 'information') {
     icon =  focused? <InfoSolid size="30" color={themeColors.bgDark} /> : <InfoOutline size="30" strokeWidth={2} color="white" />
-  }else if(route.name==='stream'){
-    icon =  focused? <StreamSolid size="30" color={themeColors.bgDark} /> : <StreamOutline size="30" strokeWidth={2} color="white" />
   } else if(route.name==='contact'){
     icon =  focused? <ContactSolid size="30" color={themeColors.bgDark} /> : <ContactOutline size="30" strokeWidth={2} color="white" />
   }
