@@ -1,26 +1,16 @@
-import { View, Text, Image, TouchableOpacity, TextInput, FlatList, Dimensions, Platform } from 'react-native'
+import { View, Text, Image, FlatList, Platform } from 'react-native'
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { themeColors } from '../theme';
 import { StatusBar } from 'expo-status-bar';
-import { categories, coffeeItems } from '../constants';
-import Carousel from 'react-native-snap-carousel';
-import CoffeeCard from '../components/coffeeCard';
+import { mainGrid } from '../constants';
 import GridCard from '../components/gridCard';
-
-const { width, height } = Dimensions.get('window');
 const ios = Platform.OS == 'ios';
 export default function HomeScreen() {
-	const [activeCategory, setActiveCategory] = useState(1);
 
 	return (
 		<View className="flex-1 relative bg-white">
 			<StatusBar />
-
-			{/* <Image 
-        source={require('../assets/images/beansBackground1.png')} 
-        style={{height: height*0.2}} 
-        className="w-full absolute -top-5 opacity-10" /> */}
 			<SafeAreaView className={ios ? '-mb-8' : ''}>
 				<View className="mx-4 flex-col items-center justify-center ">
 					<Image source={require('../assets/IITT-logo.jpeg')} className="h-20 w-32" />
@@ -30,33 +20,15 @@ export default function HomeScreen() {
 
 			</SafeAreaView>
 			{/*Four Main Options*/}
-			<View>
-				<GridCard />
+			<View style={{ flex: 1, backgroundColor: 'white' }}>
+				<FlatList
+					data={mainGrid}
+					renderItem={({ item }) => <GridCard item={item} />}
+					keyExtractor={(item) => item.id.toString()}
+					numColumns={2} // Set the number of columns
+					contentContainerStyle={{ paddingHorizontal: 20, paddingTop: 20, justifyContent: 'space-between'}}
+				/>
 			</View>
-
-			{/* coffee cards */}
-			<View className={`overflow-visible flex justify-center flex-1 ${ios ? 'mt-10' : ''}`}>
-				<View>
-					<Carousel
-						containerCustomStyle={{ overflow: 'visible' }}
-						data={coffeeItems}
-						renderItem={({ item }) => <CoffeeCard item={item} />}
-						firstItem={1}
-						loop={true}
-						inactiveSlideScale={0.75}
-						inactiveSlideOpacity={0.75}
-						sliderWidth={width}
-						itemWidth={width * 0.63}
-						slideStyle={{ display: 'flex', alignItems: 'center' }}
-					/>
-				</View>
-
-			</View>
-
-			<View>
-
-			</View>
-
 
 		</View>
 	)
