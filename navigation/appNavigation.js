@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
 import { Dimensions, LogBox, Platform, Text, View } from 'react-native';
 import ProductScreen from '../screens/ProductScreen';
+import YouTubeLinkScreen from '../screens/Youtube';
+import ContactUS from '../screens/ContactScreen';
 import { themeColors } from '../theme';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -57,8 +59,8 @@ function HomeTabs(){
       >
       <Tab.Screen name="home" component={HomeScreen} />
       <Tab.Screen name="information" component={HomeScreen} />
-      <Tab.Screen name="stream" component={HomeScreen} />
-      <Tab.Screen name="contact" component={HomeScreen} />
+      <Tab.Screen name="stream" component={YouTubeLinkScreen} />
+      <Tab.Screen name="contact" component={ContactUS} />
     </Tab.Navigator>
   )
 }

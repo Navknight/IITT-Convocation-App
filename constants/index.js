@@ -38,11 +38,8 @@ export const coffeeItems = [
   
   {
     id: 2,
-    name: 'Cappuccino',
-    price: '15.50',
-    volume: '110 ml',
-    stars: '4.3',
-    image: require('../assets/images/coffee2.png'),
+    name: 'Dr. K.N. Satyanarayana',
+    image: require('../assets/images/Director.png'),
     desc: 'The taste of coffee can vary depending on factors such as the type of beans, roast level, brewing method, and the addition of any flavors or sweeteners.'
   },
   
