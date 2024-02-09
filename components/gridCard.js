@@ -39,12 +39,16 @@ export default function GridCard(props) {
                 backgroundColor: themeColors.bgDark,
                 height: ios ? height * 0.15 : height * 0.20,
                 width: width * 0.42,
-                margin: 7
+                margin: 7,
+                shadowColor: 'black',
+                shadowOpacity: 0.3, // Adjust opacity
+                shadowRadius: 5, // Adjust radius
+                shadowOffset: { width: 0, height: 3 },
+                elevation: 8, // Add elevation for Android
             }} className="flex-col items-center justify-center">
                 {item}
                 <Text className="text-white mt-5 text-base">{props.item.title}</Text>
             </View>
         </TouchableOpacity>
-
     );
 }

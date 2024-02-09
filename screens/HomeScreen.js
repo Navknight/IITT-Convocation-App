@@ -22,7 +22,7 @@ export default function HomeScreen() {
 			</SafeAreaView>
 
 			{/* Main Content */}
-			<View style={{ paddingHorizontal: 20, paddingTop: 20, flexDirection: 'row', flexWrap: 'wrap' }}>
+			<View style={{ paddingHorizontal: 20, paddingTop: 20, flexDirection: 'row', flexWrap: 'wrap', marginBottom: '10'}}>
 				{mainGrid.map((item, index) => (
 					<View key={item.id} style={{ width: '50%' }}>
 						<GridCard item={item} />

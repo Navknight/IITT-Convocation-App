@@ -15,24 +15,25 @@ export default function CoffeeCard({ item }) {
 				borderRadius: 40,
 				backgroundColor: themeColors.bgDark,
 				height: ios ? height * 0.2 : height * 0.2,
-				width: width * 0.9,
+				width: width * 0.88,
+				shadowColor: 'black',
+				shadowRadius: 30,
+				shadowOffset: { width: 0, height: 40 },
+				shadowOpacity: 0.3,
+				elevation:5,
+				marginTop: ios ? -(height * 0.08) : 15,
 			}}
-		>
-			<View
-				style={{
-					shadowColor: 'black',
-					shadowRadius: 30,
-					shadowOffset: { width: 0, height: 40 },
-					shadowOpacity: 0.8,
-					marginTop: ios ? -(height * 0.08) : 15,
-				}}
-				className="flex-row justify-center">
-				<Image
-					source={item.image}
-					className="h-32 w-32 rounded-full"
-				/>
+			className="flex-row items-center">
+			<Image
+				source={item.image}
+				className="h-32 w-32 rounded-full m-5"
+			/>
+			<View className="flex-col items-center justify-between flex-1 p-3 pt-6 gap-y-2">
 				<Text className="text-lg text-white font-semibold z-10">
-					{item.name}
+					{item.title}
+				</Text>
+				<Text className="test-sm text-white font-normal z-10">
+					{item.desc.slice(0, 80) + '...'}
 				</Text>
 				<View style={{
 					backgroundColor: ios ? themeColors.bgDark : 'transparent',
@@ -48,11 +49,12 @@ export default function CoffeeCard({ item }) {
 							shadowRadius: 40,
 							shadowOffset: { width: -20, height: -10 },
 							shadowOpacity: 1,
-						}} className="p-4 bg-white rounded-full">
-						<PlusIcon size="25" strokeWidth={2} color={themeColors.bgDark} />
+						}} className="p-1 bg-white rounded-full">
+						<PlusIcon size="15" strokeWidth={4} color={themeColors.bgDark} />
 					</TouchableOpacity>
 				</View>
 			</View>
+
 		</View>
 
 	)
