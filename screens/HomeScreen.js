@@ -31,22 +31,14 @@ export default function HomeScreen() {
         </View>
       </SafeAreaView>
 
-      {/* Main Content */}
-      <View
-        style={{
-          paddingHorizontal: 20,
-          paddingTop: 20,
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
-      >
-        {mainGrid.map((item, index) => (
-          <View key={item.id} style={{ width: "48%", marginBottom: 16 }}>
-            <GridCard item={item} />
-          </View>
-        ))}
-      </View>
+			{/* Main Content */}
+			<View style={{ paddingHorizontal: 20, paddingTop: 20, flexDirection: 'row', flexWrap: 'wrap', marginBottom: '10'}}>
+				{mainGrid.map((item, index) => (
+					<View key={item.id} style={{ width: '50%' }}>
+						<GridCard item={item} />
+					</View>
+				))}
+			</View>
 
       {/* List of other tabs */}
       <View className="flex-col items-center justify-center w-full">

@@ -27,29 +27,19 @@ export default function FavouriteScreen(props) {
           <TouchableOpacity className=" rounded-full " onPress={() => navigation.goBack()}>
             <ArrowLeftCircleIcon size="50" strokeWidth={1.2} color="white" />
           </TouchableOpacity>
-
-          {/* <TouchableOpacity className=" rounded-full border-2 border-white p-2">
-            <HeartIcon size="24" color="white" />
-          </TouchableOpacity> */}
         </View>
         <View
-          style={{
-            shadowColor: themeColors.bgDark,
-            shadowRadius: 30,
-            shadowOffset: { width: 0, height: 30 },
-            shadowOpacity: 0.9,
-          }}
           className="flex-row justify-center">
-          <Image source={item.image} className="h-60 w-60 rounded-full overflow-hidden" style={{ marginTop: ios ? 0 : 40 }} />
+          <Image source={item.image} className="h-60 w-60 rounded-full overflow-hidden shadow-lg" style={{ marginTop: ios ? 0 : 40 }} />
         </View>
-      
+
         <View className="px-4 flex-row justify-between items-center">
           <Text style={{ color: themeColors.text }} className="text-3xl font-semibold">
             {item.name}
           </Text>
 
         </View>
-       
+
 
         <View className="px-4 space-y-2">
           <Text className="text-gray-600">
@@ -61,7 +51,7 @@ export default function FavouriteScreen(props) {
 
 
       </SafeAreaView>
-    
+
 
 
     </View>
