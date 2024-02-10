@@ -6,6 +6,7 @@ import { Dimensions, LogBox, Platform, Text, View } from 'react-native';
 import ProductScreen from '../screens/ProductScreen';
 import YouTubeLinkScreen from '../screens/Youtube';
 import ContactUS from '../screens/ContactScreen';
+import TableScreen from '../screens/Table';
 import { themeColors } from '../theme';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -28,7 +29,9 @@ export default function AppNavigation() {
       }}>
         <Stack.Screen name="Home" options={{headerShown: false}} component={HomeTabs} />
         <Stack.Screen name="Product" options={{headerShown: false}} component={ProductScreen} />
+        {/* <Stack.Screen name='Youtube' options={{headerShown: false}} component={YouTubeLinkScreen} /> */}
         <Stack.Screen name='Youtube' options={{headerShown: false}} component={YouTubeLinkScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   )
@@ -59,7 +62,7 @@ function HomeTabs(){
       
       >
       <Tab.Screen name="home" component={HomeScreen} />
-      <Tab.Screen name="information" component={HomeScreen} />
+      <Tab.Screen name="information" component={TableScreen} />
       <Tab.Screen name="contact" component={ContactUS} />
     </Tab.Navigator>
   )
