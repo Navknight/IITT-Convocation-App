@@ -8,19 +8,19 @@ export const mainGrid = [
     {
         id: 2,
         title: "Program",
-        image: "queue",
+        image: "table-list",
         link: "",
     },
     {
         id: 3,
         title: "Attire",
-        image: "dress",
+        image: "vest",
         link: "",
     },
     {
         id: 4,
         title: "Pledge",
-        image: "cap",
+        image: "user-graduate",
         link: "",
     },
 ];
@@ -40,6 +40,44 @@ export const contributors = [
         email: "cs21b060@iittp.ac.in",
     },
 ];
+
+export const graduands = [
+    {
+        id: 1,
+        name: "Chemical Engineering",
+        image: "flask"
+    },
+    {
+        id: 2,
+        name: "Computer Science And Engineering",
+        image: "code"
+    },
+    {
+        id: 3,
+        name: "Civil and Environmental Engineering",
+        image: "trowel-bricks"
+    },
+    {
+        id: 4,
+        name: "Electrical Engineering",
+        image: "bolt"
+    },
+    {
+        id: 5,
+        name: "Humanities Department",
+        image: "building-columns"
+    },
+    {
+        id: 6,
+        name: "Mathematics and Statistics",
+        image: "chart-simple"
+    },
+    {
+        id: 7,
+        name: "Mechanical Engineering",
+        image: "gears"
+    },
+]
 
 
 export const organizers = [

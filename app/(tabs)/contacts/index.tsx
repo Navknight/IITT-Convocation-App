@@ -1,14 +1,60 @@
-import { Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, StatusBar, Text, View, Image, Platform, FlatList, Dimensions } from 'react-native';
+import { contributors, organizers } from '~/constants';
+import { themeColors } from '~/themes';
 
-import EditScreenInfo from '../../../components/edit-screen-info';
+const ios = Platform.OS === 'ios'
+const { width, height } = Dimensions.get("window")
+
+function Contributer(props) {
+  console.log(props)
+
+  return (
+    <View
+      style={{
+        borderRadius: 10,
+        height: ios ? height * 0.30 : height * 0.30,
+        width: width * 0.4,
+        elevation: 5,
+        margin: ios ? -(height * 0.08) : 15,
+        backgroundColor: "white",
+        borderColor: themeColors.bgDark, // Assuming themes.bgDark holds the desired color value
+        borderWidth: 2, // Adjust the width as needed
+        borderStyle: "solid", // You can change this to 'dashed', 'dotted', etc.
+        alignItems: 'center', // Center the content horizontally
+        paddingTop: 20 // Adjust the gap between the image and text
+      }}
+    >
+      <Image source={props.item.image} style={{
+        height: 100,
+        width: 100,
+        borderRadius: 100
+      }} />
+      <View style={{ marginTop: 10 }}>
+        <Text style={{ textAlign: 'center', fontSize: 20 }}>{props.item.name}</Text>
+        <Text style={{ textAlign: 'center', fontSize: 12, marginTop: -10 }}>{props.item.designation}</Text>
+        <Text style={{ textAlign: 'center' }}>{props.item.email}</Text>
+      </View>
+    </View>
+
+
+  )
+}
 
 export default function Contacts() {
+
   return (
-    <View className={styles.container}>
-      <Text className={styles.title}>Tab Two</Text>
-      <View className={styles.separator} />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
-    </View>
+    <ScrollView style={{ flex: 1, backgroundColor: "white" }}>
+      <StatusBar />
+      <SafeAreaView className={"flex-1 flex-col justify-center items-center"}>
+        <Text className={"text-3xl font-bold"}>Contributers</Text>
+        <FlatList
+          horizontal
+          data={contributors}
+          renderItem={(item) => <Contributer {...item} />}
+          keyExtractor={item => item.id}
+        />
+      </SafeAreaView>
+    </ScrollView>
   );
 }
 
