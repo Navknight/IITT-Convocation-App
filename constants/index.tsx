@@ -2,25 +2,25 @@ export const mainGrid = [
     {
         id: 1,
         title: "Livestream",
-        icon: "film",
-        link: "",
+        image: "film",
+        link: "https://www.youtube.com/",
     },
     {
         id: 2,
-        title: "Convocation Program",
-        icon: "queue",
+        title: "Program",
+        image: "queue",
         link: "",
     },
     {
         id: 3,
-        title: "Convocation Attire",
-        icon: "dress",
+        title: "Attire",
+        image: "dress",
         link: "",
     },
     {
         id: 4,
-        title: "Convocation Pledge",
-        icon: "cap",
+        title: "Pledge",
+        image: "cap",
         link: "",
     },
 ];

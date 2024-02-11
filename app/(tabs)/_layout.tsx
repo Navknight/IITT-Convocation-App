@@ -1,11 +1,8 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Stack, Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
 import { Image, Pressable, StyleSheet } from 'react-native';
 import IITTlogo from '../../assets/IITT-logo.jpeg';
 import { themeColors } from '~/themes';
-import HomeScreen from '.';
-import Landing from './landing';
-import Information from './info';
 
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
@@ -14,23 +11,6 @@ function TabBarIcon(props: {
   return <FontAwesome size={28} style={styles.tabBarIcon} {...props} />;
 }
 
-function HomeStack() {
-  return (
-    <Stack>
-      <Stack.Screen name="index" component={HomeScreen} />
-      <Stack.Screen name="landing" component={Landing} />
-    </Stack>
-  )
-}
-
-function InformationStack() {
-  return (
-    <Stack>
-      <Stack.Screen name="info" component={Information} />
-      <Stack.Screen name="landing" component={Landing} />
-    </Stack>
-  )
-}
 
 export default function TabLayout() {
   return (
@@ -39,10 +19,9 @@ export default function TabLayout() {
         tabBarActiveTintColor: themeColors.bgDark,
       }}>
       <Tabs.Screen
-        name="index"
-        component={HomeStack}
+        name="home"
         options={{
-          headerShown: false, // Set headerShown to false to disable the header
+          headerShown: false, 
           title: 'Home',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => <Image source={IITTlogo} style={{
@@ -53,7 +32,7 @@ export default function TabLayout() {
       />
       <Tabs.Screen
         name="info"
-        component={InformationStack}
+
         options={{
           title: 'Information',
           tabBarIcon: ({ color }) => <TabBarIcon name="info" color={color} />,

@@ -1,41 +1,51 @@
-import { faVest } from '@fortawesome/free-solid-svg-icons'; // Import the vest icon
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import React from 'react';
-import { View, Text, Dimensions, Platform, TouchableOpacity } from 'react-native';
+import { faVest } from "@fortawesome/free-solid-svg-icons"; // Import the vest icon
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { useRouter } from "expo-router";
+import React from "react";
+import {
+  View,
+  Text,
+  Dimensions,
+  Platform,
+  TouchableOpacity,
+} from "react-native";
 import {
   AcademicCapIcon as Cap,
   FilmIcon as Film,
   QueueListIcon as Queue,
-} from 'react-native-heroicons/solid';
+} from "react-native-heroicons/solid";
 
-import { themeColors } from '../themes/index';
+import { themeColors } from "../themes/index";
 
 interface Props {
-
   id: number;
   title: string;
-  icon: string;
+  image: string;
   link: string;
-
+  index: number;
+  list: string;
 }
 
 export default function GridCard(props: Props) {
-  const { width, height } = Dimensions.get('window');
-  const ios = Platform.OS == 'ios';
+  const { width, height } = Dimensions.get("window");
+  const ios = Platform.OS == "ios";
   let item;
+  const router = useRouter();
 
-  switch (props.icon) {
-    case 'cap':
+  switch (props.image) {
+    case "cap":
       item = <Cap size="50" color={themeColors.bgLight} />;
       break;
-    case 'film':
+    case "film":
       item = <Film size="50" color={themeColors.bgLight} />;
       break;
-    case 'queue':
+    case "queue":
       item = <Queue size="50" color={themeColors.bgLight} />;
       break;
-    case 'dress':
-      item = <FontAwesomeIcon icon={faVest} size={50} color={themeColors.bgLight} />;
+    case "dress":
+      item = (
+        <FontAwesomeIcon icon={faVest} size={50} color={themeColors.bgLight} />
+      );
       break;
     default:
       item = null;
@@ -43,7 +53,14 @@ export default function GridCard(props: Props) {
   }
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={
+          props.image == "film"
+              ? () => router.push({pathname: "/home/stream", params : {link: props.link}})
+              : () => router.push({pathname: "/home/landing", params: { list: props.list, index: props.index }})
+      
+      }
+    >
       <View
         style={{
           borderRadius: 10,
@@ -57,6 +74,6 @@ export default function GridCard(props: Props) {
         {item}
         <Text className="text-white mt-5 text-base">{props.title}</Text>
       </View>
-    </TouchableOpacity >
+    </TouchableOpacity>
   );
 }
