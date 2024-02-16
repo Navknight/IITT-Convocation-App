@@ -28,7 +28,6 @@ const ios = Platform.OS == "ios";
 export default function ListCard(props: Props) {
   const navigation = useNavigation();
   const item = { ...props };
-  console.log("item: " + item.name);
   return (
     <View
       style={{
@@ -60,7 +59,10 @@ export default function ListCard(props: Props) {
         >
           <TouchableOpacity
             onPress={() => {
-              router.push({ pathname: "/home/landing", params: {list: props.list, index: props.index} });
+              router.push({
+                pathname: "/home/landing",
+                params: { list: props.list, index: props.index },
+              });
             }}
             style={{
               backgroundColor: themeColors.bgDark,

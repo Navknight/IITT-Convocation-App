@@ -23,7 +23,6 @@ export default function Information({ navigation }) {
   );
 
   useEffect(() => {
-    console.log("refreshed")
     fetchDataIfRefresh(); // Fetch data only if refresh is true
   }, [refresh]);
 
@@ -35,6 +34,7 @@ export default function Information({ navigation }) {
         fetchedNotifications.push({ id: doc.id, ...doc.data() });
       });
       setNotifications(fetchedNotifications);
+      console.log(fetchedNotifications)
     } catch (error) {
       console.error('Error fetching data: ', error);
     }

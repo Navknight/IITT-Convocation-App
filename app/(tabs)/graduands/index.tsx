@@ -49,7 +49,7 @@ function Contributer(props) {
 
 export default function Graduands() {
     return (
-        <ScrollView style={{ flex: 1, backgroundColor: "white" }}>
+        <View style={{ flex: 1, backgroundColor: "white" }}>
             <StatusBar />
             <SafeAreaView className="flex-1 flex-col justify-center items-center">
                 <FlatList
@@ -59,6 +59,6 @@ export default function Graduands() {
                     keyExtractor={(item) => item.id}
                 />
             </SafeAreaView>
-        </ScrollView>
+        </View>
     );
 }

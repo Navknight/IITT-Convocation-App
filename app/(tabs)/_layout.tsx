@@ -25,6 +25,7 @@ export default function TabLayout() {
         headerShadowVisible: true,
         headerStyle: { elevation: 5 },
       }}
+      initialRouteName="/home"
     >
       <Tabs.Screen
         name="home"

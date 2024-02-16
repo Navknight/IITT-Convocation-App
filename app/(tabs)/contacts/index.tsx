@@ -46,7 +46,7 @@ export default function Contacts() {
     <ScrollView style={{ flex: 1, backgroundColor: "white" }}>
       <StatusBar />
       <SafeAreaView className={"flex-1 flex-col justify-center items-center"}>
-        <Text className={"text-3xl font-bold"}>Contributers</Text>
+        <Text className={"text-3xl font-bold"}>App Contributors</Text>
         <FlatList
           horizontal
           data={contributors}
