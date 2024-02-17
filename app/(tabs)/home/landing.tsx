@@ -1,8 +1,8 @@
 import { FontAwesome6 } from "@expo/vector-icons";
+import { ReactNativeZoomableView } from "@openspacelabs/react-native-zoomable-view";
 import { useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { collection, getDocs } from "firebase/firestore";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   View,
   Text,
@@ -10,45 +10,47 @@ import {
   Dimensions,
   Platform,
   ScrollView,
+  FlatList,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { themeColors } from "../../../themes/index";
 
-import * as lists from "~/constants/index";
-import { firebase_db } from "~/utils/firebase";
+import { ConvocationProgram } from "~/constants";
 
 const { width, height } = Dimensions.get("window");
 const ios = Platform.OS == "ios";
 
+const Cards = (img) => {
+  console.log(img);
+  return (
+    <View
+      className="flex-1 flex-col items-center bg-white m-5 p-4"
+      style={{
+        width: width * 0.9,
+        height: height * 0.5,
+        elevation: 5,
+        borderRadius: 10,
+      }}
+    >
+      <ReactNativeZoomableView initialZoom={0.9}>
+        <Image
+          source={img.item}
+          resizeMode="contain"
+          style={{
+            width: width * 0.6,
+          }}
+        />
+      </ReactNativeZoomableView>
+      <Text className="text-xs text-gray-500">Double Tap To Zoom</Text>
+    </View>
+  );
+};
+
 export default function Landing() {
-  const toUse = useLocalSearchParams();
-  const item = lists[toUse.list][toUse.index];
-  console.log("landing")
-
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    if (item.online) {
-      const fetchData = async () => {
-        try {
-          const querySnapshot = await getDocs(
-            collection(firebase_db, item.collection),
-          );
-          const fetchedData = [];
-          querySnapshot.forEach((doc) => {
-            fetchedData.push({ id: doc.id, ...doc.data() });
-          });
-          setData(fetchedData);
-          console.log(fetchedData);
-        } catch (error) {
-          console.log(error);
-        }
-      };
-
-      fetchData();
-    }
-  }, []);
+  const params = useLocalSearchParams();
+  const id = Number(params.id);
+  const data = ConvocationProgram.find((item) => item.id === id);
 
   return (
     <ScrollView className="flex-1">
@@ -62,14 +64,27 @@ export default function Landing() {
       />
       <SafeAreaView className="space-y-4 flex-1">
         <View className="flex-row justify-center">
-          {item.image !== "" ? (
+          {data.image ? (
             <Image
-              source={item.image}
+              source={data.image}
               className="h-60 w-60 rounded-full overflow-hidden"
               style={{ marginTop: ios ? 0 : 100 }}
             />
           ) : (
-            <FontAwesome6 name={item.icon} />
+            <View
+              className="flex-col justify-center items-center w-60 h-60 m-5"
+              style={{
+                backgroundColor: themeColors.bgDark,
+                borderRadius: 100,
+                marginTop: ios ? 0 : 100,
+              }}
+            >
+              <FontAwesome6
+                name={data.icon}
+                size={100}
+                color={themeColors.bgLight}
+              />
+            </View>
           )}
         </View>
 
@@ -78,15 +93,15 @@ export default function Landing() {
             style={{ color: themeColors.text }}
             className="text-3xl font-semibold"
           >
-            {item.name}
+            {data.title}
           </Text>
         </View>
 
-        <View className="px-4 space-y-2">
-          <Text className="text-gray-600 text-lg p-4">
-            {item.online? data.find((dic) => dic.id == item.document).speech : item.desc}
-          </Text>
-        </View>
+        <FlatList
+          numColumns={1}
+          data={data.images}
+          renderItem={(item) => <Cards {...item} />}
+        />
       </SafeAreaView>
     </ScrollView>
   );

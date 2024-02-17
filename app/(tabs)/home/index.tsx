@@ -51,12 +51,7 @@ export default function HomeScreen() {
       {/* List of other tabs */}
       <View className="flex-col items-center justify-center w-full">
         {ConvocationProgram.map((item, index) => (
-          <ListCard
-            key={index}
-            {...item}
-            list="ConvocationProgram"
-            index={index}
-          />
+          <ListCard key={index} {...item} />
         ))}
       </View>
     </ScrollView>

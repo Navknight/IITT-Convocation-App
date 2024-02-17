@@ -1,13 +1,12 @@
 import { useNavigation } from "@react-navigation/native";
-import { useLocalSearchParams } from "expo-router";
+import { mainGrid } from "~/constants";
 import React, { useEffect } from "react";
 import { View, Linking } from "react-native";
 
 const YouTubeLinkScreen = () => {
-  const link = useLocalSearchParams()
   const navigate = useNavigation();
   const openYouTubeLink = () => {
-    const youtubeLink = link.link;
+    const youtubeLink = mainGrid[0].link;
 
     // Use Linking to open the URL
     Linking.openURL(youtubeLink).catch((err) =>

@@ -6,7 +6,6 @@ import {
 import { useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import Pdf from "react-native-pdf";
 import {
   View,
   Text,
@@ -66,14 +65,45 @@ export default function Landing() {
             {key}
           </Text>
         </View>
-
-        <View className="px-4 space-y-2 flex-1 flex-col items-center">
-          <ReactNativeZoomableViewWithGestures>
-            <Pdf
+        <View className="flex-1 flex-col items-center">
+          <View
+            className="px-4 flex-1 flex-col items-center bg-white m-10"
+            style={{
+              width: width * 0.9,
+              height: height * 0.5,
+              elevation: 5,
+            }}
+          >
+            <ReactNativeZoomableView>
+              <Image
                 source={data.four}
-            />
-            <Image source={data.image} />
-          </ReactNativeZoomableViewWithGestures>
+                resizeMode="contain"
+                style={{
+                  width: width * 0.8,
+                }}
+              />
+            </ReactNativeZoomableView>
+            <Text className="text-xs text-gray-500">Double Tap To Zoom</Text>
+          </View>
+          <View
+            className="px-4 flex-1 flex-col items-center bg-white"
+            style={{
+              width: width * 0.9,
+              height: height * 0.5,
+              elevation: 5,
+            }}
+          >
+            <ReactNativeZoomableView>
+              <Image
+                source={data.five}
+                resizeMode="contain"
+                style={{
+                  width: width * 0.8,
+                }}
+              />
+            </ReactNativeZoomableView>
+            <Text className="text-xs text-gray-500">Double Tap To Zoom</Text>
+          </View>
         </View>
       </SafeAreaView>
     </ScrollView>

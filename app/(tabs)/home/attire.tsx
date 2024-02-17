@@ -27,7 +27,7 @@ export default function Landing() {
   const ios = Platform.OS === "ios";
   const { height, width } = Dimensions.get("window");
   return (
-    <ScrollView className="flex-1">
+    <ScrollView className="flex-1 bg-white">
       <StatusBar style="light" />
       <Image
         source={require("~/assets/BackGroundIIT.png")}

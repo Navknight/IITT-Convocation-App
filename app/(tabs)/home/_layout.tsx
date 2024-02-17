@@ -36,16 +36,30 @@ export default function Layout() {
           ),
         }}
       />
-      <Stack.Screen name="pledge"
-      options={{
-        headerTitle: "Pledge",
-        headerRight: () => (
-          <Image
-            source={require("../../../assets/IITT-logo.jpeg")}
-            style={{ width: 80, height: 50 }}
-          />
-        ),
-      }} />
+      <Stack.Screen
+        name="pledge"
+        options={{
+          headerTitle: "Pledge",
+          headerRight: () => (
+            <Image
+              source={require("../../../assets/IITT-logo.jpeg")}
+              style={{ width: 80, height: 50 }}
+            />
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="program"
+        options={{
+          headerTitle: "Programme",
+          headerRight: () => (
+            <Image
+              source={require("../../../assets/IITT-logo.jpeg")}
+              style={{ width: 80, height: 50 }}
+            />
+          ),
+        }}
+      />
     </Stack>
   );
 }

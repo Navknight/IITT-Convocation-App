@@ -1,3 +1,4 @@
+import { FontAwesome6 } from "@expo/vector-icons";
 import { router, useNavigation } from "expo-router";
 import React from "react";
 import {
@@ -13,21 +14,17 @@ import { PlusIcon } from "react-native-heroicons/outline";
 import { themeColors } from "../themes/index";
 
 interface Props {
-  key: number;
-  id: number;
   title: string;
-  name: string;
   image: string;
+  icon: string;
   desc: string;
-  list: string;
-  index: number;
+  link: string;
+  id: number;
 }
 
 const { width, height } = Dimensions.get("window");
 const ios = Platform.OS == "ios";
 export default function ListCard(props: Props) {
-  const navigation = useNavigation();
-  const item = { ...props };
   return (
     <View
       style={{
@@ -43,7 +40,20 @@ export default function ListCard(props: Props) {
       }}
       className="flex-row items-center"
     >
-      <Image source={props.image} className="h-32 w-32 rounded-full m-5" />
+      {props.image ? (
+        <Image source={props.image} className="h-32 w-32 rounded-full m-5" />
+      ) : (
+        <View
+          className="flex-col justify-center items-center w-32 h-32 m-5"
+          style={{ backgroundColor: themeColors.bgDark, borderRadius: 100 }}
+        >
+          <FontAwesome6
+            name={props.icon}
+            size={50}
+            color={themeColors.bgLight}
+          />
+        </View>
+      )}
       <View className="flex-col items-center justify-between flex-1 p-3 pt-6 gap-y-2">
         <Text className="text-lg text-black font-semibold z-10">
           {props.title}
@@ -60,8 +70,8 @@ export default function ListCard(props: Props) {
           <TouchableOpacity
             onPress={() => {
               router.push({
-                pathname: "/home/landing",
-                params: { list: props.list, index: props.index },
+                pathname: props.link,
+                params: { speechType: props.speechType, id: props.id },
               });
             }}
             style={{
