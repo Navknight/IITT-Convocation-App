@@ -3,7 +3,7 @@ export const mainGrid = [
     id: 1,
     title: "Livestream",
     image: "film",
-    link: "https://www.youtube.com/",
+    link: "https://www.youtube.com/watch?v=hvkkpUdHS1s",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ export const ConvocationProgram = [
   {
     id: 1,
     title: "Directors Report",
-    image: require("../assets/Director.png"),
+    image: require("../assets/Director.jpeg"),
     desc: `Dr. Kalidindi N. Satyanarayana is currently the founding Director of IIT Tirupati, Andhra Pradesh. He is on deputation from IIT Madras where he has been a Professor in the Building Technology & Construction Management Division of the Department of Civil Engineering.
       He received his B.Tech degree in Civil Engineering from IIT Madras. He then received MS and PhD degrees with specialization in Construction Engineering and Management from Clemson University, USA. He has been a faculty member at IIT Madras since 1991. In 2009 he was a Visiting Professor at Iowa State University, USA.
       His teaching, research and consulting interests are in the areas of project management, construction contracts, construction productivity, construction equipment, C&D waste management, and public private partnerships. He has published extensively in these areas. He is the recipient of many awards including the Project Management Institute (India) Distinguished Scholar Award (2011).
@@ -80,7 +80,7 @@ export const ConvocationProgram = [
     id: 5,
     title: "Convocation Committees",
     icon: "people-group",
-    desc: "",
+    desc: "The committe behind the 4th and 5th convocation of IIT TIrupati",
     images: [
       require("~/assets/convocationCommittee1.png"),
       require("~/assets/convocationCommittee2.png"),

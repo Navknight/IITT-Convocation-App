@@ -35,7 +35,7 @@ const Cards = (img) => {
     >
       <ReactNativeZoomableView initialZoom={0.9}>
         <Image
-          source={img.item}
+          source={img.img}
           resizeMode="contain"
           style={{
             width: width * 0.6,
@@ -56,7 +56,7 @@ export default function Landing() {
     <ScrollView className="flex-1">
       <StatusBar style="light" />
       <Image
-        source={require("~/assets/BackGroundIIT.png")}
+        source={require("~/assets/backgroundiitt.jpeg")}
         style={{
           height: 300,
         }}
@@ -97,11 +97,11 @@ export default function Landing() {
           </Text>
         </View>
 
-        <FlatList
-          numColumns={1}
-          data={data.images}
-          renderItem={(item) => <Cards {...item} />}
-        />
+        {data?.images?.map((item, index) => {
+  console.log(item);
+  return <Cards key={index} img={item} />;
+})}
+
       </SafeAreaView>
     </ScrollView>
   );

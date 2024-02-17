@@ -25,7 +25,7 @@ export default function Landing(props) {
     <ScrollView className="flex-1">
       <StatusBar style="light" />
       <Image
-        source={require("~/assets/BackGroundIIT.png")}
+        source={require("~/assets/backgroundiitt.jpeg")}
         style={{
           height: 300,
         }}

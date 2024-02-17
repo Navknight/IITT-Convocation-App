@@ -19,7 +19,8 @@ function Contributer(props) {
             <View
                 style={{
                     borderRadius: 10,
-                    height: ios ? height * 0.2 : height * 0.2,
+                    // height:  height * 0.2,
+                    minHeight: height*0.2,
                     width: width * 0.42,
                     elevation: 5,
                     margin: ios ? -(height * 0.08) : 10,
@@ -27,20 +28,15 @@ function Contributer(props) {
                     borderColor: themeColors.bgDark, // Assuming themes.bgDark holds the desired color value
                     borderWidth: 2, // Adjust the width as needed
                     borderStyle: "solid", // You can change this to 'dashed', 'dotted', etc.
-                    alignItems: "center", // Center the content horizontally
                     padding: 10, // Adjust the gap between the image and text
-                    paddingTop: 20
                 }}
+                className="flex-col items-center justify-center"
             >
                 <FontAwesome6 name={`${props.item.image}`} size={50} color={themeColors.bgDark} />
-                <View style={{ marginTop: 10 }}>
-                    <Text style={{ textAlign: "center", fontSize: 20 }}>
+                <View style={{ marginTop: 5 }}>
+                    <Text style={{ textAlign: "center"}} className="text-lg">
                         {props.item.name}
                     </Text>
-                    <Text style={{ textAlign: "center", fontSize: 12, marginTop: -10 }}>
-                        {props.item.designation}
-                    </Text>
-                    <Text style={{ textAlign: "center" }}>{props.item.email}</Text>
                 </View>
             </View>
         </Pressable>

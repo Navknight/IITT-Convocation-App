@@ -17,7 +17,7 @@ export default function Layout() {
           headerTitle: "Home",
           headerRight: () => (
             <Image
-              source={require("../../../assets/IITT-logo.jpeg")}
+              source={require("../../../assets/IITT-logo.png")}
               style={{ width: 80, height: 50 }}
             />
           ),
@@ -30,7 +30,7 @@ export default function Layout() {
           headerTitle: "Attire",
           headerRight: () => (
             <Image
-              source={require("../../../assets/IITT-logo.jpeg")}
+              source={require("../../../assets/IITT-logo.png")}
               style={{ width: 80, height: 50 }}
             />
           ),
@@ -42,7 +42,7 @@ export default function Layout() {
           headerTitle: "Pledge",
           headerRight: () => (
             <Image
-              source={require("../../../assets/IITT-logo.jpeg")}
+              source={require("../../../assets/IITT-logo.png")}
               style={{ width: 80, height: 50 }}
             />
           ),
@@ -54,7 +54,7 @@ export default function Layout() {
           headerTitle: "Programme",
           headerRight: () => (
             <Image
-              source={require("../../../assets/IITT-logo.jpeg")}
+              source={require("../../../assets/IITT-logo.png")}
               style={{ width: 80, height: 50 }}
             />
           ),

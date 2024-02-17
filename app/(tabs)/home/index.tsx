@@ -23,7 +23,7 @@ export default function HomeScreen() {
           }}
         >
           <Image
-            source={require("../../../assets/IITT-logo.jpeg")}
+            source={require("../../../assets/IITT-logo.png")}
             style={{ height: 100, width: 150 }}
           />
           <Text>4th and 5th (Joint) Convocation</Text>

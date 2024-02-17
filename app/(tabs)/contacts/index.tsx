@@ -1,3 +1,5 @@
+import { FontAwesome6 } from "@expo/vector-icons";
+import React from "react";
 import {
   SafeAreaView,
   ScrollView,
@@ -8,9 +10,11 @@ import {
   Platform,
   FlatList,
   Dimensions,
+  TouchableOpacity,
+  Linking,
 } from "react-native";
 
-import { contributors, organizers } from "~/constants";
+import { contributors } from "~/constants";
 import { themeColors } from "~/themes";
 
 const ios = Platform.OS === "ios";
@@ -59,6 +63,29 @@ export default function Contacts() {
     <ScrollView style={{ flex: 1, backgroundColor: "white" }}>
       <StatusBar />
       <SafeAreaView className="flex-1 flex-col justify-center items-center">
+        <Text className="text-3xl font-bold">Contact Info</Text>
+        <TouchableOpacity
+          onPress={() => Linking.openURL("mailto:convocation2024@iittp.ac.in")}
+          style={{
+            height: height * 0.3,
+            width: width * 0.9,
+            backgroundColor: themeColors.bgDark,
+            elevation: 5,
+            borderRadius: 10,
+            margin: 20,
+          }}
+          className="flex-col items-center justify-center"
+        >
+          <FontAwesome6
+            name="contact-card"
+            color={themeColors.bgLight}
+            size={100}
+          />
+          <Text className="m-5 text-xl" style={{ color: themeColors.bgLight }}>
+            convocation2024@iittp.ac.in
+            <FontAwesome6 name="link" />
+          </Text>
+        </TouchableOpacity>
         <Text className="text-3xl font-bold">App Contributors</Text>
         <FlatList
           horizontal
@@ -70,9 +97,3 @@ export default function Contacts() {
     </ScrollView>
   );
 }
-
-const styles = {
-  container: `items-center flex-1 justify-center`,
-  separator: `h-[1px] my-7 w-4/5 bg-gray-200`,
-  title: `text-xl font-bold`,
-};

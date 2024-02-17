@@ -13,7 +13,7 @@ export default function Layout() {
           headerTitle: "Graduands",
           headerRight: () => (
             <Image
-              source={require("../../../assets/IITT-logo.jpeg")}
+              source={require("../../../assets/IITT-logo.png")}
               style={{ width: 80, height: 50 }}
             />
           ),
@@ -23,7 +23,7 @@ export default function Layout() {
         headerTitle: info.params.list,
         headerRight: () => (
             <Image
-              source={require("../../../assets/IITT-logo.jpeg")}
+              source={require("../../../assets/IITT-logo.png")}
               style={{ width: 80, height: 50 }}
             />
           ),

@@ -52,7 +52,7 @@ export default function Speech() {
     <ScrollView className="flex-1">
       <StatusBar style="light" />
       <Image
-        source={require("~/assets/BackGroundIIT.png")}
+        source={require("~/assets/backgroundiitt.jpeg")}
         style={{ height: 300 }}
         className="w-full absolute"
       />
@@ -62,7 +62,7 @@ export default function Speech() {
             source={
               speechType === "Chief Guest"
                 ? require("~/assets/ChiefGuest.jpg")
-                : require("~/assets/Director.png")
+                : require("~/assets/Director.jpeg")
             }
             className="h-60 w-60 rounded-full overflow-hidden"
             style={{ marginTop: ios ? 0 : 100 }}

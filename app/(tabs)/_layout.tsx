@@ -4,7 +4,7 @@ import { Tabs, router } from "expo-router";
 import React from "react";
 import { Button, Image, Pressable, StyleSheet, Text } from "react-native";
 
-import IITTlogo from "../../assets/IITT-logo.jpeg";
+import IITTlogo from "../../assets/IITT-logo.png";
 
 import { themeColors } from "~/themes";
 
