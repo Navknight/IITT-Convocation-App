@@ -24,6 +24,7 @@ const ios = Platform.OS == "ios";
 export default function Landing() {
   const toUse = useLocalSearchParams();
   const item = lists[toUse.list][toUse.index];
+  console.log("landing")
 
   const [data, setData] = useState([]);
 

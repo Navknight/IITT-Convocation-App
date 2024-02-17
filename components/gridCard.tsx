@@ -2,7 +2,7 @@ import { FontAwesome6 } from "@expo/vector-icons";
 import { faVest } from "@fortawesome/free-solid-svg-icons"; // Import the vest icon
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { useRouter } from "expo-router";
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -32,20 +32,31 @@ export default function GridCard(props: Props) {
   const ios = Platform.OS == "ios";
   const router = useRouter();
 
+  let path = "";
+
+  switch (props.image) {
+    case "film":
+      path = "home/stream";
+      break;
+    case "vest":
+      path = "home/attire";
+      break;
+    case "user-graduate":
+      path = "home/pledge";
+      break;
+    case "table-list":
+      path = "home/program";
+      break;
+    default:
+      path = "home/landing";
+  }
   return (
     <TouchableOpacity
-      onPress={
-        props.image == "film"
-          ? () =>
-              router.push({
-                pathname: "/home/stream",
-                params: { link: props.link },
-              })
-          : () =>
-              router.push({
-                pathname: "/home/landing",
-                params: { list: props.list, index: props.index },
-              })
+      onPress={() =>
+        router.push({
+          pathname: path,
+          params: { list: props.list, index: props.index },
+        })
       }
     >
       <View

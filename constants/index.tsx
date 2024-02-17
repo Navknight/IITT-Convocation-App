@@ -39,44 +39,6 @@ export const contributors = [
   },
 ];
 
-export const graduands = [
-  {
-    id: 1,
-    name: "Chemical Engineering",
-    image: "flask",
-  },
-  {
-    id: 2,
-    name: "Computer Science And Engineering",
-    image: "code",
-  },
-  {
-    id: 3,
-    name: "Civil and Environmental Engineering",
-    image: "trowel-bricks",
-  },
-  {
-    id: 4,
-    name: "Electrical Engineering",
-    image: "bolt",
-  },
-  {
-    id: 5,
-    name: "Humanities Department",
-    image: "building-columns",
-  },
-  {
-    id: 6,
-    name: "Mathematics and Statistics",
-    image: "chart-simple",
-  },
-  {
-    id: 7,
-    name: "Mechanical Engineering",
-    image: "gears",
-  },
-];
-
 export const organizers = [
   {
     id: 1,
@@ -111,3 +73,75 @@ export const ConvocationProgram = [
     desc: "Mr. Dharmendra Pradhan is the Honorable Education Minister of India",
   },
 ];
+
+export const graduands = [
+  {
+    id: 1,
+    name: "Chemical Engineering",
+    image: "flask",
+  },
+  {
+    id: 2,
+    name: "Chemistry Department",
+    image: "flask-vial",
+  },
+  {
+    id: 3,
+    name: "Computer Science And Engineering",
+    image: "code",
+  },
+  {
+    id: 4,
+    name: "Civil and Environmental Engineering",
+    image: "trowel-bricks",
+  },
+  {
+    id: 5,
+    name: "Electrical Engineering",
+    image: "bolt",
+  },
+  {
+    id: 6,
+    name: "Humanities Department",
+    image: "building-columns",
+  },
+  {
+    id: 7,
+    name: "Mathematics and Statistics",
+    image: "chart-simple",
+  },
+  {
+    id: 8,
+    name: "Mechanical Engineering",
+    image: "gears",
+  },
+  {
+    id: 9,
+    name: "Physics Department",
+    image: "atom"
+  }
+];
+
+export const graduandData = {
+  "Chemical Engineering": {
+    icon: "flask",
+    four: require("~/assets/4th-ch.pdf"),
+    five: "",
+  },
+  "Chemistry Department": {
+    icon: "flask-vial",
+    four: require("~/assets/4th-cy.pdf")
+  },
+  "Computer Science And Engineering": {
+    icon:"code",
+    four: require("~/assets/4th-cs.pdf")
+  },
+  "Civil and Environmental Engineering": {},
+  "Electrical Engineering": {},
+  "Humanities Department": {},
+  "Mathematics and Statistics": {},
+  "Mechanical Engineering": {},
+  "Physics Department": {
+    icon: "atom"
+  }
+};

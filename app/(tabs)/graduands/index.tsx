@@ -7,14 +7,14 @@ import { View, ScrollView, StatusBar, SafeAreaView, FlatList, Text, Platform, Di
 
 import { graduands } from "~/constants";
 import { themeColors } from "~/themes/index";
+import { router } from "expo-router";
 const ios = Platform.OS === 'ios';
 const { width, height } = Dimensions.get("window")
 function Contributer(props) {
-    console.log(props);
 
     return (
         <Pressable
-            onPress={() => console.log("uwu")}
+            onPress={() => router.push({pathname: "graduands/graduandsPage", params:{list: props.item.name}})}
         >
             <View
                 style={{

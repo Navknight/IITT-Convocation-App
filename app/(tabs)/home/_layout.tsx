@@ -1,7 +1,6 @@
 import { Stack } from "expo-router";
 import React from "react";
 import { Image } from "react-native";
-import Landing from "./landing";
 
 export default function Layout() {
   return (
@@ -16,10 +15,37 @@ export default function Layout() {
         name="landing"
         options={{
           headerTitle: "Home",
-          headerRight: () => <Image source={require('../../../assets/IITT-logo.jpeg')} style={{width: 80, height: 50}} />,
+          headerRight: () => (
+            <Image
+              source={require("../../../assets/IITT-logo.jpeg")}
+              style={{ width: 80, height: 50 }}
+            />
+          ),
         }}
       />
       <Stack.Screen name="stream" />
+      <Stack.Screen
+        name="attire"
+        options={{
+          headerTitle: "Attire",
+          headerRight: () => (
+            <Image
+              source={require("../../../assets/IITT-logo.jpeg")}
+              style={{ width: 80, height: 50 }}
+            />
+          ),
+        }}
+      />
+      <Stack.Screen name="pledge"
+      options={{
+        headerTitle: "Pledge",
+        headerRight: () => (
+          <Image
+            source={require("../../../assets/IITT-logo.jpeg")}
+            style={{ width: 80, height: 50 }}
+          />
+        ),
+      }} />
     </Stack>
   );
 }

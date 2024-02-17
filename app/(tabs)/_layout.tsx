@@ -63,8 +63,9 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="graduands/index"
+        name="graduands"
         options={{
+          headerShown: false,
           title: "Graduands",
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="graduation-cap" color={color} />
