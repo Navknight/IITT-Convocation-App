@@ -86,13 +86,6 @@ export default function Contacts() {
             <FontAwesome6 name="link" />
           </Text>
         </TouchableOpacity>
-        <Text className="text-3xl font-bold">App Contributors</Text>
-        <FlatList
-          horizontal
-          data={contributors}
-          renderItem={(item) => <Contributer {...item} />}
-          keyExtractor={(item) => item.id}
-        />
       </SafeAreaView>
     </ScrollView>
   );

@@ -10,7 +10,6 @@ import {
   Dimensions,
   Platform,
   ScrollView,
-  FlatList,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
