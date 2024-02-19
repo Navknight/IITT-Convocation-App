@@ -10,10 +10,8 @@ import {
   Platform,
   Dimensions,
   StyleSheet,
-  Button,
   Pressable,
 } from "react-native";
-import { DataTable } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { themeColors } from "../../../themes/index";
