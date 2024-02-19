@@ -54,8 +54,6 @@ export default function Landing() {
   const key = params.list;
   const data = graduandData[key];
   const [table, setTable] = useState("2022");
-  console.log(data.four);
-  const { height, width } = Dimensions.get("window");
   return (
     <ScrollView className="flex-1">
       <StatusBar style="light" />

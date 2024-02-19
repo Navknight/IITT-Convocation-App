@@ -1,13 +1,12 @@
 /* eslint-disable prettier/prettier */
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import React from "react";
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { FontAwesome6 } from '@expo/vector-icons';
-import { View, ScrollView, StatusBar, SafeAreaView, FlatList, Text, Platform, Dimensions, Pressable } from "react-native";
+import { router } from "expo-router";
+import React from "react";
+import { View, StatusBar, SafeAreaView, FlatList, Text, Platform, Dimensions, Pressable } from "react-native";
 
 import { graduands } from "~/constants";
 import { themeColors } from "~/themes/index";
-import { router } from "expo-router";
+
 const ios = Platform.OS === 'ios';
 const { width, height } = Dimensions.get("window")
 function Contributer(props) {
