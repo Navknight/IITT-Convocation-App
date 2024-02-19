@@ -1,0 +1,332 @@
+[
+  {
+    "S.No.": 1,
+    "Dept.": "CS",
+    "Roll No.": "CS18B001",
+    "Student Name": "A V S HRUDAI"
+  },
+  {
+    "S.No.": 2,
+    "Dept.": "CS",
+    "Roll No.": "CS18B002",
+    "Student Name": "AMBATIPUDI RISHI VINAYAKA"
+  },
+  {
+    "S.No.": 3,
+    "Dept.": "CS",
+    "Roll No.": "CS18B003",
+    "Student Name": "ARPIT BANDEJIYA"
+  },
+  {
+    "S.No.": 4,
+    "Dept.": "CS",
+    "Roll No.": "CS18B004",
+    "Student Name": "BATTIKADI AKSHITHA"
+  },
+  {
+    "S.No.": 5,
+    "Dept.": "CS",
+    "Roll No.": "CS18B005",
+    "Student Name": "BHUKYA SAI THANOJ"
+  },
+  {
+    "S.No.": 6,
+    "Dept.": "CS",
+    "Roll No.": "CS18B006",
+    "Student Name": "CHIRAG GUPTA"
+  },
+  {
+    "S.No.": 7,
+    "Dept.": "CS",
+    "Roll No.": "CS18B007",
+    "Student Name": "DARAHAS KOPPARAPU"
+  },
+  {
+    "S.No.": 8,
+    "Dept.": "CS",
+    "Roll No.": "CS18B008",
+    "Student Name": "DEEP MAHESHWARI"
+  },
+  {
+    "S.No.": 9,
+    "Dept.": "CS",
+    "Roll No.": "CS18B009",
+    "Student Name": "PENMETCHA DEEPANVI"
+  },
+  {
+    "S.No.": 10,
+    "Dept.": "CS",
+    "Roll No.": "CS18B010",
+    "Student Name": "DINKAR"
+  },
+  {
+    "S.No.": 11,
+    "Dept.": "CS",
+    "Roll No.": "CS18B011",
+    "Student Name": "DONGA ROHIT SAI"
+  },
+  {
+    "S.No.": 12,
+    "Dept.": "CS",
+    "Roll No.": "CS18B012",
+    "Student Name": "EMADABATHUNI NITIN NIRMAL"
+  },
+  {
+    "S.No.": 13,
+    "Dept.": "CS",
+    "Roll No.": "CS18B013",
+    "Student Name": "GALI NIKHITHA VEDI"
+  },
+  {
+    "S.No.": 14,
+    "Dept.": "CS",
+    "Roll No.": "CS18B014",
+    "Student Name": "HEMANT KUMAR"
+  },
+  {
+    "S.No.": 15,
+    "Dept.": "CS",
+    "Roll No.": "CS18B016",
+    "Student Name": "KETHAVATH NARASIMHA NAIK"
+  },
+  {
+    "S.No.": 16,
+    "Dept.": "CS",
+    "Roll No.": "CS18B017",
+    "Student Name": "KIRTIK SURYAKANT JANGALE"
+  },
+  {
+    "S.No.": 17,
+    "Dept.": "CS",
+    "Roll No.": "CS18B018",
+    "Student Name": "KOLLOJU NAGARJUNA"
+  },
+  {
+    "S.No.": 18,
+    "Dept.": "CS",
+    "Roll No.": "CS18B019",
+    "Student Name": "KONDURU LIKHITH KUMAR RAJU"
+  },
+  {
+    "S.No.": 19,
+    "Dept.": "CS",
+    "Roll No.": "CS18B020",
+    "Student Name": "KRISHNENDU SUDHEESH"
+  },
+  {
+    "S.No.": 20,
+    "Dept.": "CS",
+    "Roll No.": "CS18B021",
+    "Student Name": "MIR SAMEED ALI"
+  },
+  {
+    "S.No.": 21,
+    "Dept.": "CS",
+    "Roll No.": "CS18B022",
+    "Student Name": "MISAL SOURABH BHARAT"
+  },
+  {
+    "S.No.": 22,
+    "Dept.": "CS",
+    "Roll No.": "CS18B023",
+    "Student Name": "NATHANI JAWAHAR SAI"
+  },
+  {
+    "S.No.": 23,
+    "Dept.": "CS",
+    "Roll No.": "CS18B024",
+    "Student Name": "NEELAPALA SATYA SAI"
+  },
+  {
+    "S.No.": 24,
+    "Dept.": "CS",
+    "Roll No.": "CS18B025",
+    "Student Name": "PADIGI REDDY SAGAR REDDY"
+  },
+  {
+    "S.No.": 25,
+    "Dept.": "CS",
+    "Roll No.": "CS18B026",
+    "Student Name": "PAIPURI NAGA LOKESH"
+  },
+  {
+    "S.No.": 26,
+    "Dept.": "CS",
+    "Roll No.": "CS18B027",
+    "Student Name": "PODUGU ABHINAY"
+  },
+  {
+    "S.No.": 27,
+    "Dept.": "CS",
+    "Roll No.": "CS18B028",
+    "Student Name": "RACHABATTUNI LEEHA VAISHNAVI"
+  },
+  {
+    "S.No.": 28,
+    "Dept.": "CS",
+    "Roll No.": "CS18B029",
+    "Student Name": "ROHIT SHAKYA"
+  },
+  {
+    "S.No.": 29,
+    "Dept.": "CS",
+    "Roll No.": "CS18B031",
+    "Student Name": "SAPPARAPU BHAVANA"
+  },
+  {
+    "S.No.": 30,
+    "Dept.": "CS",
+    "Roll No.": "CS18B032",
+    "Student Name": "SATTI RAVI VENKATA SAI MAHESWARA REDDY"
+  },
+  {
+    "S.No.": 31,
+    "Dept.": "CS",
+    "Roll No.": "CS18B033",
+    "Student Name": "SAYOLLA VARUN SIMHA"
+  },
+  {
+    "S.No.": 32,
+    "Dept.": "CS",
+    "Roll No.": "CS18B034",
+    "Student Name": "SHUBHANKAR BHADRA"
+  },
+  {
+    "S.No.": 33,
+    "Dept.": "CS",
+    "Roll No.": "CS18B035",
+    "Student Name": "SIRIKI VENKATA SIVA SURYA SAI"
+  },
+  {
+    "S.No.": 34,
+    "Dept.": "CS",
+    "Roll No.": "CS18B036",
+    "Student Name": "SRIPRANAV MANNEPALLI"
+  },
+  {
+    "S.No.": 35,
+    "Dept.": "CS",
+    "Roll No.": "CS18B037",
+    "Student Name": "SWETHA R"
+  },
+  {
+    "S.No.": 36,
+    "Dept.": "CS",
+    "Roll No.": "CS18B038",
+    "Student Name": "TAPISH KUMAR OJHA"
+  },
+  {
+    "S.No.": 37,
+    "Dept.": "CS",
+    "Roll No.": "CS18B041",
+    "Student Name": "NIKHIL M"
+  },
+  {
+    "S.No.": 38,
+    "Dept.": "CS",
+    "Roll No.": "CS18B042",
+    "Student Name": "SHREYANSH MEHRA"
+  },
+  {
+    "S.No.": 39,
+    "Dept.": "CS",
+    "Roll No.": "CS18B043",
+    "Student Name": "SHRUTI PRIYA"
+  },
+  {
+    "S.No.": 40,
+    "Dept.": "CS",
+    "Roll No.": "CS18B044",
+    "Student Name": "TIRUVURU SAI DATTA REDDY"
+  },
+  {
+    "S.No.": 41,
+    "Dept.": "CS",
+    "Roll No.": "CS18B045",
+    "Student Name": "W.PRANATHI"
+  },
+  {
+    "S.No.": 42,
+    "Dept.": "CS",
+    "Roll No.": "CS18S501",
+    "Student Name": "ARNAB BHADRA"
+  },
+  {
+    "S.No.": 43,
+    "Dept.": "CS",
+    "Roll No.": "CS18S503",
+    "Student Name": "HARYAN CHIRAYU ANANT"
+  },
+  {
+    "S.No.": 44,
+    "Dept.": "CS",
+    "Roll No.": "CS18S504",
+    "Student Name": "KOMURAVELLI PRASHANTH"
+  },
+  {
+    "S.No.": 45,
+    "Dept.": "CS",
+    "Roll No.": "CS18S506",
+    "Student Name": "SURI BHASKER SRI HARSHA"
+  },
+  {
+    "S.No.": 46,
+    "Dept.": "CS",
+    "Roll No.": "CS20M001",
+    "Student Name": "ALOK KUMAR SHARMA"
+  },
+  {
+    "S.No.": 47,
+    "Dept.": "CS",
+    "Roll No.": "CS20M002",
+    "Student Name": "ANIKET KUMAR"
+  },
+  {
+    "S.No.": 48,
+    "Dept.": "CS",
+    "Roll No.": "CS20M003",
+    "Student Name": "ANIRUDDHA SARKAR"
+  },
+  {
+    "S.No.": 49,
+    "Dept.": "CS",
+    "Roll No.": "CS20M004",
+    "Student Name": "ANKIT KUMAR"
+  },
+  {
+    "S.No.": 50,
+    "Dept.": "CS",
+    "Roll No.": "CS20M007",
+    "Student Name": "HEMANT KUMAR PATHAK"
+  },
+  {
+    "S.No.": 51,
+    "Dept.": "CS",
+    "Roll No.": "CS20M008",
+    "Student Name": "JATIN SINGH"
+  },
+  {
+    "S.No.": 52,
+    "Dept.": "CS",
+    "Roll No.": "CS20M009",
+    "Student Name": "LAKSHAY KALRA"
+  },
+  {
+    "S.No.": 53,
+    "Dept.": "CS",
+    "Roll No.": "CS20M010",
+    "Student Name": "PRANTIK PARASHAR SARMAH"
+  },
+  {
+    "S.No.": 54,
+    "Dept.": "CS",
+    "Roll No.": "CS20M011",
+    "Student Name": "SATHURI BHARATH KUMAR GOUD"
+  },
+  {
+    "S.No.": 55,
+    "Dept.": "CS",
+    "Roll No.": "CS20M014",
+    "Student Name": "SURAJ MUKHIA"
+  }
+]

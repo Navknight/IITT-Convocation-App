@@ -8,7 +8,6 @@ import {
   View,
   Image,
   Platform,
-  FlatList,
   Dimensions,
   TouchableOpacity,
   Linking,

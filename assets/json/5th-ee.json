@@ -1,0 +1,392 @@
+[
+  {
+    "S.No.": 1,
+    "Dept.": "EE",
+    "Roll No.": "EE18B015",
+    "Student Name": "JAYADEEP D"
+  },
+  {
+    "S.No.": 2,
+    "Dept.": "EE",
+    "Roll No.": "EE19B002",
+    "Student Name": "ANNALURU R R SREENIVASA MURTHY"
+  },
+  {
+    "S.No.": 3,
+    "Dept.": "EE",
+    "Roll No.": "EE19B003",
+    "Student Name": "ARVIND MEENA"
+  },
+  {
+    "S.No.": 4,
+    "Dept.": "EE",
+    "Roll No.": "EE19B004",
+    "Student Name": "ARYAN SHAH"
+  },
+  {
+    "S.No.": 5,
+    "Dept.": "EE",
+    "Roll No.": "EE19B005",
+    "Student Name": "ASHISH"
+  },
+  {
+    "S.No.": 6,
+    "Dept.": "EE",
+    "Roll No.": "EE19B006",
+    "Student Name": "BALAVIGNESH S"
+  },
+  {
+    "S.No.": 7,
+    "Dept.": "EE",
+    "Roll No.": "EE19B007",
+    "Student Name": "BUDDA ANGEL GREY"
+  },
+  {
+    "S.No.": 8,
+    "Dept.": "EE",
+    "Roll No.": "EE19B008",
+    "Student Name": "CHANDAN KUMAR MAURYA"
+  },
+  {
+    "S.No.": 9,
+    "Dept.": "EE",
+    "Roll No.": "EE19B010",
+    "Student Name": "CHEEKATLA NIRANJAN"
+  },
+  {
+    "S.No.": 10,
+    "Dept.": "EE",
+    "Roll No.": "EE19B011",
+    "Student Name": "CHEVAKULA SAI RAHUL"
+  },
+  {
+    "S.No.": 11,
+    "Dept.": "EE",
+    "Roll No.": "EE19B012",
+    "Student Name": "DASARI SAI LIKITHA"
+  },
+  {
+    "S.No.": 12,
+    "Dept.": "EE",
+    "Roll No.": "EE19B013",
+    "Student Name": "DASARI SUSREESH"
+  },
+  {
+    "S.No.": 13,
+    "Dept.": "EE",
+    "Roll No.": "EE19B014",
+    "Student Name": "ESLAVATH ARUN KUMAR"
+  },
+  {
+    "S.No.": 14,
+    "Dept.": "EE",
+    "Roll No.": "EE19B015",
+    "Student Name": "GOSETTY JAGATH KUMAR"
+  },
+  {
+    "S.No.": 15,
+    "Dept.": "EE",
+    "Roll No.": "EE19B016",
+    "Student Name": "HRITIK CHAUDHARY"
+  },
+  {
+    "S.No.": 16,
+    "Dept.": "EE",
+    "Roll No.": "EE19B017",
+    "Student Name": "J SRIKAR"
+  },
+  {
+    "S.No.": 17,
+    "Dept.": "EE",
+    "Roll No.": "EE19B020",
+    "Student Name": "KANAGALA RITHVIK"
+  },
+  {
+    "S.No.": 18,
+    "Dept.": "EE",
+    "Roll No.": "EE19B021",
+    "Student Name": "KANKANALA AKASH REDDY"
+  },
+  {
+    "S.No.": 19,
+    "Dept.": "EE",
+    "Roll No.": "EE19B022",
+    "Student Name": "KATRAGADDA SAI PHANI CHARAN"
+  },
+  {
+    "S.No.": 20,
+    "Dept.": "EE",
+    "Roll No.": "EE19B023",
+    "Student Name": "KESARLA RISHIKA"
+  },
+  {
+    "S.No.": 21,
+    "Dept.": "EE",
+    "Roll No.": "EE19B024",
+    "Student Name": "KURUVA VINOD KUMAR"
+  },
+  {
+    "S.No.": 22,
+    "Dept.": "EE",
+    "Roll No.": "EE19B025",
+    "Student Name": "MADHUVARASU VENKATA SRIRATHNA SAKETHRAM"
+  },
+  {
+    "S.No.": 23,
+    "Dept.": "EE",
+    "Roll No.": "EE19B026",
+    "Student Name": "MEHUL KUMAR"
+  },
+  {
+    "S.No.": 24,
+    "Dept.": "EE",
+    "Roll No.": "EE19B027",
+    "Student Name": "MOHD OSAMA"
+  },
+  {
+    "S.No.": 25,
+    "Dept.": "EE",
+    "Roll No.": "EE19B028",
+    "Student Name": "MUSHARI ADVITH"
+  },
+  {
+    "S.No.": 26,
+    "Dept.": "EE",
+    "Roll No.": "EE19B029",
+    "Student Name": "NALLA SIDDHARTHA"
+  },
+  {
+    "S.No.": 27,
+    "Dept.": "EE",
+    "Roll No.": "EE19B030",
+    "Student Name": "NANDIRAJU ABHAY KUMARA SRI KRISHNA"
+  },
+  {
+    "S.No.": 28,
+    "Dept.": "EE",
+    "Roll No.": "EE19B031",
+    "Student Name": "NELAPATI NITHIN"
+  },
+  {
+    "S.No.": 29,
+    "Dept.": "EE",
+    "Roll No.": "EE19B032",
+    "Student Name": "NELLURI SUNJEEVAN"
+  },
+  {
+    "S.No.": 30,
+    "Dept.": "EE",
+    "Roll No.": "EE19B033",
+    "Student Name": "NERUSU SUPRIYA"
+  },
+  {
+    "S.No.": 31,
+    "Dept.": "EE",
+    "Roll No.": "EE19B034",
+    "Student Name": "PANCHAMI S"
+  },
+  {
+    "S.No.": 32,
+    "Dept.": "EE",
+    "Roll No.": "EE19B035",
+    "Student Name": "P. KEERTHANA"
+  },
+  {
+    "S.No.": 33,
+    "Dept.": "EE",
+    "Roll No.": "EE19B036",
+    "Student Name": "PRAKHAR PRATAP SINGH"
+  },
+  {
+    "S.No.": 34,
+    "Dept.": "EE",
+    "Roll No.": "EE19B037",
+    "Student Name": "PRANAV HARI PANICKER"
+  },
+  {
+    "S.No.": 35,
+    "Dept.": "EE",
+    "Roll No.": "EE19B038",
+    "Student Name": "PULIGADDA SAAKETH RAMACHANDRA"
+  },
+  {
+    "S.No.": 36,
+    "Dept.": "EE",
+    "Roll No.": "EE19B039",
+    "Student Name": "SHAIK NOORUDDIN"
+  },
+  {
+    "S.No.": 37,
+    "Dept.": "EE",
+    "Roll No.": "EE19B040",
+    "Student Name": "SINGU SAI VAMSI TEJA"
+  },
+  {
+    "S.No.": 38,
+    "Dept.": "EE",
+    "Roll No.": "EE19B042",
+    "Student Name": "UTKARSH PANDYA"
+  },
+  {
+    "S.No.": 39,
+    "Dept.": "EE",
+    "Roll No.": "EE19B043",
+    "Student Name": "VENKATA SAKET RAM GOTETI"
+  },
+  {
+    "S.No.": 40,
+    "Dept.": "EE",
+    "Roll No.": "EE19B044",
+    "Student Name": "YERNENI SRI SHAKUNTHALA"
+  },
+  {
+    "S.No.": 41,
+    "Dept.": "EE",
+    "Roll No.": "EE19B045",
+    "Student Name": "ABHIMENYU"
+  },
+  {
+    "S.No.": 42,
+    "Dept.": "EE",
+    "Roll No.": "EE19B046",
+    "Student Name": "ALAPATI MURALI KARTHIK"
+  },
+  {
+    "S.No.": 43,
+    "Dept.": "EE",
+    "Roll No.": "EE19B047",
+    "Student Name": "M SUCHITHRA"
+  },
+  {
+    "S.No.": 44,
+    "Dept.": "EE",
+    "Roll No.": "EE19B048",
+    "Student Name": "POSI SAI VENKATA ROHITH YERRA"
+  },
+  {
+    "S.No.": 45,
+    "Dept.": "EE",
+    "Roll No.": "EE19B049",
+    "Student Name": "SURYA PRATAP TYAGI"
+  },
+  {
+    "S.No.": 46,
+    "Dept.": "EE",
+    "Roll No.": "EE19S501",
+    "Student Name": "ALURU SHILPA"
+  },
+  {
+    "S.No.": 47,
+    "Dept.": "EE",
+    "Roll No.": "EE20S502",
+    "Student Name": "GOUTAM GHOSH"
+  },
+  {
+    "S.No.": 48,
+    "Dept.": "EE",
+    "Roll No.": "EE20S503",
+    "Student Name": "MAKIREDDY POOJITHA"
+  },
+  {
+    "S.No.": 49,
+    "Dept.": "EE",
+    "Roll No.": "EE21M002",
+    "Student Name": "BHASME DIKSHANT VINAYAK"
+  },
+  {
+    "S.No.": 50,
+    "Dept.": "EE",
+    "Roll No.": "EE21M004",
+    "Student Name": "DUPILI RAVI KUMAR"
+  },
+  {
+    "S.No.": 51,
+    "Dept.": "EE",
+    "Roll No.": "EE21M005",
+    "Student Name": "HALAVATH NARESHKUMAR"
+  },
+  {
+    "S.No.": 52,
+    "Dept.": "EE",
+    "Roll No.": "EE21M007",
+    "Student Name": "KUMARI ANJALI"
+  },
+  {
+    "S.No.": 53,
+    "Dept.": "EE",
+    "Roll No.": "EE21M009",
+    "Student Name": "MADASU V V SATYA NARAYANA"
+  },
+  {
+    "S.No.": 54,
+    "Dept.": "EE",
+    "Roll No.": "EE21M011",
+    "Student Name": "ROHIT SINGH"
+  },
+  {
+    "S.No.": 55,
+    "Dept.": "EE",
+    "Roll No.": "EE21M014",
+    "Student Name": "BONUMADDI SAI SAHITYA"
+  },
+  {
+    "S.No.": 56,
+    "Dept.": "EE",
+    "Roll No.": "EE21M015",
+    "Student Name": "GUMMADI VEDA SAI RAM"
+  },
+  {
+    "S.No.": 57,
+    "Dept.": "EE",
+    "Roll No.": "EE21M016",
+    "Student Name": "GUNNAMREDDY BHAVYA"
+  },
+  {
+    "S.No.": 58,
+    "Dept.": "EE",
+    "Roll No.": "EE21M017",
+    "Student Name": "K. LALNUNPUIA"
+  },
+  {
+    "S.No.": 59,
+    "Dept.": "EE",
+    "Roll No.": "EE21M019",
+    "Student Name": "PEDASINGU RAJESH"
+  },
+  {
+    "S.No.": 60,
+    "Dept.": "EE",
+    "Roll No.": "EE21M020",
+    "Student Name": "PENTA SAI SREEJA"
+  },
+  {
+    "S.No.": 61,
+    "Dept.": "EE",
+    "Roll No.": "EE21M022",
+    "Student Name": "RESHMA R"
+  },
+  {
+    "S.No.": 62,
+    "Dept.": "EE",
+    "Roll No.": "EE21M023",
+    "Student Name": "SNEHAL D VARBHE"
+  },
+  {
+    "S.No.": 63,
+    "Dept.": "EE",
+    "Roll No.": "EE21M024",
+    "Student Name": "SRIRAM RAMESH"
+  },
+  {
+    "S.No.": 64,
+    "Dept.": "EE",
+    "Roll No.": "EE21M026",
+    "Student Name": "AJIT SINGH BALYAN"
+  },
+  {
+    "S.No.": 65,
+    "Dept.": "EE",
+    "Roll No.": "EE21M027",
+    "Student Name": "SUNIL KUMAR GUPTA"
+  }
+]

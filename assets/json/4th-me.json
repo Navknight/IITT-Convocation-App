@@ -1,0 +1,320 @@
+[
+  {
+    "S.No.": 1,
+    "Dept.": "ME",
+    "Roll No.": "ME18B001",
+    "Student Name": "ABHIRAM GUMMULA"
+  },
+  {
+    "S.No.": 2,
+    "Dept.": "ME",
+    "Roll No.": "ME18B002",
+    "Student Name": "AJAY MEENA"
+  },
+  {
+    "S.No.": 3,
+    "Dept.": "ME",
+    "Roll No.": "ME18B003",
+    "Student Name": "AMGOTH SHIVA"
+  },
+  {
+    "S.No.": 4,
+    "Dept.": "ME",
+    "Roll No.": "ME18B004",
+    "Student Name": "ANKIT KUMAR"
+  },
+  {
+    "S.No.": 5,
+    "Dept.": "ME",
+    "Roll No.": "ME18B005",
+    "Student Name": "AYUSH PRASAD"
+  },
+  {
+    "S.No.": 6,
+    "Dept.": "ME",
+    "Roll No.": "ME18B006",
+    "Student Name": "CHANDAKA LOKESH"
+  },
+  {
+    "S.No.": 7,
+    "Dept.": "ME",
+    "Roll No.": "ME18B007",
+    "Student Name": "CHANDRA PRANAVI"
+  },
+  {
+    "S.No.": 8,
+    "Dept.": "ME",
+    "Roll No.": "ME18B009",
+    "Student Name": "HIMANSHU SINGH"
+  },
+  {
+    "S.No.": 9,
+    "Dept.": "ME",
+    "Roll No.": "ME18B011",
+    "Student Name": "J MANOJ KUMAR"
+  },
+  {
+    "S.No.": 10,
+    "Dept.": "ME",
+    "Roll No.": "ME18B012",
+    "Student Name": "KAMMARA KAVYASREE"
+  },
+  {
+    "S.No.": 11,
+    "Dept.": "ME",
+    "Roll No.": "ME18B014",
+    "Student Name": "KOJJARAPU AKASH"
+  },
+  {
+    "S.No.": 12,
+    "Dept.": "ME",
+    "Roll No.": "ME18B015",
+    "Student Name": "MAHINDRAKER ADARSH"
+  },
+  {
+    "S.No.": 13,
+    "Dept.": "ME",
+    "Roll No.": "ME18B016",
+    "Student Name": "MOHAMMED SALEEQ K"
+  },
+  {
+    "S.No.": 14,
+    "Dept.": "ME",
+    "Roll No.": "ME18B017",
+    "Student Name": "MULUKURI SAI VIVEK"
+  },
+  {
+    "S.No.": 15,
+    "Dept.": "ME",
+    "Roll No.": "ME18B018",
+    "Student Name": "NATESH ARAVIND S"
+  },
+  {
+    "S.No.": 16,
+    "Dept.": "ME",
+    "Roll No.": "ME18B019",
+    "Student Name": "NERELLA V S SATYA KASI VISWANADHA"
+  },
+  {
+    "S.No.": 17,
+    "Dept.": "ME",
+    "Roll No.": "ME18B020",
+    "Student Name": "NIRMAL RAJPOPAT"
+  },
+  {
+    "S.No.": 18,
+    "Dept.": "ME",
+    "Roll No.": "ME18B021",
+    "Student Name": "PATURU NAGA SAI SAMHITHA"
+  },
+  {
+    "S.No.": 19,
+    "Dept.": "ME",
+    "Roll No.": "ME18B022",
+    "Student Name": "PRINCE RAJA"
+  },
+  {
+    "S.No.": 20,
+    "Dept.": "ME",
+    "Roll No.": "ME18B023",
+    "Student Name": "RAHUL KUMAR"
+  },
+  {
+    "S.No.": 21,
+    "Dept.": "ME",
+    "Roll No.": "ME18B024",
+    "Student Name": "RISHABH GUPTA"
+  },
+  {
+    "S.No.": 22,
+    "Dept.": "ME",
+    "Roll No.": "ME18B026",
+    "Student Name": "SAHAINI BATCHALA"
+  },
+  {
+    "S.No.": 23,
+    "Dept.": "ME",
+    "Roll No.": "ME18B027",
+    "Student Name": "NIKAS SARVESH JANARDHAN"
+  },
+  {
+    "S.No.": 24,
+    "Dept.": "ME",
+    "Roll No.": "ME18B028",
+    "Student Name": "SAURABH PAWAR"
+  },
+  {
+    "S.No.": 25,
+    "Dept.": "ME",
+    "Roll No.": "ME18B029",
+    "Student Name": "SAURABH SANJAYRAO SURYAWANSHI"
+  },
+  {
+    "S.No.": 26,
+    "Dept.": "ME",
+    "Roll No.": "ME18B030",
+    "Student Name": "SHIVAM KHANDEKAR"
+  },
+  {
+    "S.No.": 27,
+    "Dept.": "ME",
+    "Roll No.": "ME18B031",
+    "Student Name": "SIBIBALAN JEEVANANDAM"
+  },
+  {
+    "S.No.": 28,
+    "Dept.": "ME",
+    "Roll No.": "ME18B032",
+    "Student Name": "SIGIREDDY SATYA SAI RAM"
+  },
+  {
+    "S.No.": 29,
+    "Dept.": "ME",
+    "Roll No.": "ME18B033",
+    "Student Name": "TARUN SUBHASH NAGDEVE"
+  },
+  {
+    "S.No.": 30,
+    "Dept.": "ME",
+    "Roll No.": "ME18B034",
+    "Student Name": "THOKALA VIJAY KUMAR"
+  },
+  {
+    "S.No.": 31,
+    "Dept.": "ME",
+    "Roll No.": "ME18B036",
+    "Student Name": "V V SAI ABHILASH"
+  },
+  {
+    "S.No.": 32,
+    "Dept.": "ME",
+    "Roll No.": "ME18B037",
+    "Student Name": "VELTURI HARSHAVARDHAN REDDY"
+  },
+  {
+    "S.No.": 33,
+    "Dept.": "ME",
+    "Roll No.": "ME18B038",
+    "Student Name": "VINAY KUMAR GUGULOTHU"
+  },
+  {
+    "S.No.": 34,
+    "Dept.": "ME",
+    "Roll No.": "ME18B039",
+    "Student Name": "VISHAL TOMAR"
+  },
+  {
+    "S.No.": 35,
+    "Dept.": "ME",
+    "Roll No.": "ME18B040",
+    "Student Name": "YARLABOINA ROHITH RATNA KUMAR"
+  },
+  {
+    "S.No.": 36,
+    "Dept.": "ME",
+    "Roll No.": "ME18B041",
+    "Student Name": "YEDIDI PRAMODH"
+  },
+  {
+    "S.No.": 37,
+    "Dept.": "ME",
+    "Roll No.": "ME18B042",
+    "Student Name": "KOTAPROLU HEMANTH"
+  },
+  {
+    "S.No.": 38,
+    "Dept.": "ME",
+    "Roll No.": "ME19S503",
+    "Student Name": "KUMAR MILIND REWANAND SHRIPAD"
+  },
+  {
+    "S.No.": 39,
+    "Dept.": "ME",
+    "Roll No.": "ME20M001",
+    "Student Name": "ADITYA CHAUDHARY"
+  },
+  {
+    "S.No.": 40,
+    "Dept.": "ME",
+    "Roll No.": "ME20M003",
+    "Student Name": "ANKUR SRIVASTAVA"
+  },
+  {
+    "S.No.": 41,
+    "Dept.": "ME",
+    "Roll No.": "ME20M006",
+    "Student Name": "KIRAN RAJ KUMAR J"
+  },
+  {
+    "S.No.": 42,
+    "Dept.": "ME",
+    "Roll No.": "ME20M008",
+    "Student Name": "NAGAVARAPU BADARI SAI SURYA TEJA"
+  },
+  {
+    "S.No.": 43,
+    "Dept.": "ME",
+    "Roll No.": "ME20M009",
+    "Student Name": "NEERAJ MISHRA"
+  },
+  {
+    "S.No.": 44,
+    "Dept.": "ME",
+    "Roll No.": "ME20M010",
+    "Student Name": "PATTAPU VINOD KUMAR"
+  },
+  {
+    "S.No.": 45,
+    "Dept.": "ME",
+    "Roll No.": "ME20M012",
+    "Student Name": "RAMAVATHU SRINIVAS"
+  },
+  {
+    "S.No.": 46,
+    "Dept.": "ME",
+    "Roll No.": "ME20M013",
+    "Student Name": "BANDARI SAI DRUPADH"
+  },
+  {
+    "S.No.": 47,
+    "Dept.": "ME",
+    "Roll No.": "ME20M014",
+    "Student Name": "ABHINAV MALIK"
+  },
+  {
+    "S.No.": 48,
+    "Dept.": "ME",
+    "Roll No.": "ME20M015",
+    "Student Name": "JASPREET SINGH"
+  },
+  {
+    "S.No.": 49,
+    "Dept.": "ME",
+    "Roll No.": "ME20M016",
+    "Student Name": "RAJBIR SINGH BAJWA"
+  },
+  {
+    "S.No.": 50,
+    "Dept.": "ME",
+    "Roll No.": "ME20M017",
+    "Student Name": "SANDEEP KUMAR"
+  },
+  {
+    "S.No.": 51,
+    "Dept.": "ME",
+    "Roll No.": "ME20M018",
+    "Student Name": "SARETH VR"
+  },
+  {
+    "S.No.": 52,
+    "Dept.": "ME",
+    "Roll No.": "ME20M019",
+    "Student Name": "VISHAV DEEP"
+  },
+  {
+    "S.No.": 53,
+    "Dept.": "ME",
+    "Roll No.": "ME20S503",
+    "Student Name": "A NARAYAN TEJA"
+  }
+]

@@ -1,0 +1,416 @@
+[
+  {
+    "S.No.": 1,
+    "Dept.": "CS",
+    "Roll No.": "CS17B003",
+    "Student Name": "ABISHEKH P"
+  },
+  {
+    "S.No.": 2,
+    "Dept.": "CS",
+    "Roll No.": "CS18B015",
+    "Student Name": "KATIKALA PAVAN KUMAR"
+  },
+  {
+    "S.No.": 3,
+    "Dept.": "CS",
+    "Roll No.": "CS18B030",
+    "Student Name": "SALA RAJ KUMAR"
+  },
+  {
+    "S.No.": 4,
+    "Dept.": "CS",
+    "Roll No.": "CS18B039",
+    "Student Name": "TUDUMU ABHILASH"
+  },
+  {
+    "S.No.": 5,
+    "Dept.": "CS",
+    "Roll No.": "CS18S505",
+    "Student Name": "ROHIT GUPTA"
+  },
+  {
+    "S.No.": 6,
+    "Dept.": "CS",
+    "Roll No.": "CS19B001",
+    "Student Name": "ADITYA SHARMA"
+  },
+  {
+    "S.No.": 7,
+    "Dept.": "CS",
+    "Roll No.": "CS19B002",
+    "Student Name": "AMASA YASWANTH"
+  },
+  {
+    "S.No.": 8,
+    "Dept.": "CS",
+    "Roll No.": "CS19B003",
+    "Student Name": "AMIT KESARI"
+  },
+  {
+    "S.No.": 9,
+    "Dept.": "CS",
+    "Roll No.": "CS19B004",
+    "Student Name": "B GREESHMITHA"
+  },
+  {
+    "S.No.": 10,
+    "Dept.": "CS",
+    "Roll No.": "CS19B005",
+    "Student Name": "BADRI GAUTAM"
+  },
+  {
+    "S.No.": 11,
+    "Dept.": "CS",
+    "Roll No.": "CS19B006",
+    "Student Name": "BAINDLA GOUTHAM"
+  },
+  {
+    "S.No.": 12,
+    "Dept.": "CS",
+    "Roll No.": "CS19B007",
+    "Student Name": "BOBBA RUTHVIK"
+  },
+  {
+    "S.No.": 13,
+    "Dept.": "CS",
+    "Roll No.": "CS19B008",
+    "Student Name": "BUKKE ROOPA SREE"
+  },
+  {
+    "S.No.": 14,
+    "Dept.": "CS",
+    "Roll No.": "CS19B009",
+    "Student Name": "CHEJARLA VENKATA SANDEEP"
+  },
+  {
+    "S.No.": 15,
+    "Dept.": "CS",
+    "Roll No.": "CS19B010",
+    "Student Name": "CHINTA GOWTAMI"
+  },
+  {
+    "S.No.": 16,
+    "Dept.": "CS",
+    "Roll No.": "CS19B011",
+    "Student Name": "D P SAHITHI RANI"
+  },
+  {
+    "S.No.": 17,
+    "Dept.": "CS",
+    "Roll No.": "CS19B012",
+    "Student Name": "DEBESHEE DAS"
+  },
+  {
+    "S.No.": 18,
+    "Dept.": "CS",
+    "Roll No.": "CS19B013",
+    "Student Name": "G VAIBHAV"
+  },
+  {
+    "S.No.": 19,
+    "Dept.": "CS",
+    "Roll No.": "CS19B014",
+    "Student Name": "GADDAM KISHOR RAVI"
+  },
+  {
+    "S.No.": 20,
+    "Dept.": "CS",
+    "Roll No.": "CS19B015",
+    "Student Name": "GAGAN HEDGE"
+  },
+  {
+    "S.No.": 21,
+    "Dept.": "CS",
+    "Roll No.": "CS19B016",
+    "Student Name": "GANNA YASHWANTH"
+  },
+  {
+    "S.No.": 22,
+    "Dept.": "CS",
+    "Roll No.": "CS19B017",
+    "Student Name": "GRANDHI SVS PAVAN SAHITH"
+  },
+  {
+    "S.No.": 23,
+    "Dept.": "CS",
+    "Roll No.": "CS19B018",
+    "Student Name": "PAVAN SRI RAM GUDIPATI"
+  },
+  {
+    "S.No.": 24,
+    "Dept.": "CS",
+    "Roll No.": "CS19B019",
+    "Student Name": "IMMANENI ADITYA NAGA SAI"
+  },
+  {
+    "S.No.": 25,
+    "Dept.": "CS",
+    "Roll No.": "CS19B020",
+    "Student Name": "KANCHARLA RAVI CHANDRA"
+  },
+  {
+    "S.No.": 26,
+    "Dept.": "CS",
+    "Roll No.": "CS19B021",
+    "Student Name": "KAPA HARSHITHA"
+  },
+  {
+    "S.No.": 27,
+    "Dept.": "CS",
+    "Roll No.": "CS19B022",
+    "Student Name": "KARANAM PAVAN KALYAN"
+  },
+  {
+    "S.No.": 28,
+    "Dept.": "CS",
+    "Roll No.": "CS19B023",
+    "Student Name": "KUTHADI PRADEEP DAS"
+  },
+  {
+    "S.No.": 29,
+    "Dept.": "CS",
+    "Roll No.": "CS19B025",
+    "Student Name": "MADASU AASHRITH SAI"
+  },
+  {
+    "S.No.": 30,
+    "Dept.": "CS",
+    "Roll No.": "CS19B026",
+    "Student Name": "MANNEM YETHIN CHANDRA SAI"
+  },
+  {
+    "S.No.": 31,
+    "Dept.": "CS",
+    "Roll No.": "CS19B027",
+    "Student Name": "MOCHI NAGENDRA DEEPIKA"
+  },
+  {
+    "S.No.": 32,
+    "Dept.": "CS",
+    "Roll No.": "CS19B028",
+    "Student Name": "MUPPANA GUNA SRI NITESH"
+  },
+  {
+    "S.No.": 33,
+    "Dept.": "CS",
+    "Roll No.": "CS19B029",
+    "Student Name": "NAMAN SHARMA"
+  },
+  {
+    "S.No.": 34,
+    "Dept.": "CS",
+    "Roll No.": "CS19B030",
+    "Student Name": "NAVJOT SINGH"
+  },
+  {
+    "S.No.": 35,
+    "Dept.": "CS",
+    "Roll No.": "CS19B031",
+    "Student Name": "P. ANURAAG REDDY"
+  },
+  {
+    "S.No.": 36,
+    "Dept.": "CS",
+    "Roll No.": "CS19B032",
+    "Student Name": "PALEPU VIVEK MANI CHARAN"
+  },
+  {
+    "S.No.": 37,
+    "Dept.": "CS",
+    "Roll No.": "CS19B034",
+    "Student Name": "RAJENDRA KUMAR"
+  },
+  {
+    "S.No.": 38,
+    "Dept.": "CS",
+    "Roll No.": "CS19B035",
+    "Student Name": "SAURAV GWALIA"
+  },
+  {
+    "S.No.": 39,
+    "Dept.": "CS",
+    "Roll No.": "CS19B036",
+    "Student Name": "SEDAMAKI KRANTHI"
+  },
+  {
+    "S.No.": 40,
+    "Dept.": "CS",
+    "Roll No.": "CS19B037",
+    "Student Name": "SHREETESH M"
+  },
+  {
+    "S.No.": 41,
+    "Dept.": "CS",
+    "Roll No.": "CS19B038",
+    "Student Name": "SINGH SAGAR BHUPENDRA"
+  },
+  {
+    "S.No.": 42,
+    "Dept.": "CS",
+    "Roll No.": "CS19B039",
+    "Student Name": "SUMAN P"
+  },
+  {
+    "S.No.": 43,
+    "Dept.": "CS",
+    "Roll No.": "CS19B040",
+    "Student Name": "VADA VARUN SAI REDDY"
+  },
+  {
+    "S.No.": 44,
+    "Dept.": "CS",
+    "Roll No.": "CS19B041",
+    "Student Name": "VASAM MANJUNATH KASHIRAM"
+  },
+  {
+    "S.No.": 45,
+    "Dept.": "CS",
+    "Roll No.": "CS19B042",
+    "Student Name": "VUDA JASWANTH"
+  },
+  {
+    "S.No.": 46,
+    "Dept.": "CS",
+    "Roll No.": "CS19B043",
+    "Student Name": "YAYI SAI SRUJAN"
+  },
+  {
+    "S.No.": 47,
+    "Dept.": "CS",
+    "Roll No.": "CS19B044",
+    "Student Name": "ANU ANAND ANNU"
+  },
+  {
+    "S.No.": 48,
+    "Dept.": "CS",
+    "Roll No.": "CS19B045",
+    "Student Name": "EMANI NAGA SAI VENKATA SOWMYA"
+  },
+  {
+    "S.No.": 49,
+    "Dept.": "CS",
+    "Roll No.": "CS19B046",
+    "Student Name": "GITHIN GEORGE"
+  },
+  {
+    "S.No.": 50,
+    "Dept.": "CS",
+    "Roll No.": "CS19B047",
+    "Student Name": "M HARISH PRADYOT"
+  },
+  {
+    "S.No.": 51,
+    "Dept.": "CS",
+    "Roll No.": "CS19B048",
+    "Student Name": "SAPPARAPU RITHIKA"
+  },
+  {
+    "S.No.": 52,
+    "Dept.": "CS",
+    "Roll No.": "CS19B049",
+    "Student Name": "T POORNA SYAMA SUNDAR"
+  },
+  {
+    "S.No.": 53,
+    "Dept.": "CS",
+    "Roll No.": "CS19B050",
+    "Student Name": "TALHA SHAMIM"
+  },
+  {
+    "S.No.": 54,
+    "Dept.": "CS",
+    "Roll No.": "CS20M012",
+    "Student Name": "SAURAV KUMAR SINGH"
+  },
+  {
+    "S.No.": 55,
+    "Dept.": "CS",
+    "Roll No.": "CS20S503",
+    "Student Name": "SHRIRAM SHRIDHAR SHANBHAG"
+  },
+  {
+    "S.No.": 56,
+    "Dept.": "CS",
+    "Roll No.": "CS21M001",
+    "Student Name": "ABHISHEK SRIVASTAV"
+  },
+  {
+    "S.No.": 57,
+    "Dept.": "CS",
+    "Roll No.": "CS21M002",
+    "Student Name": "ANIL PANKAJ"
+  },
+  {
+    "S.No.": 58,
+    "Dept.": "CS",
+    "Roll No.": "CS21M003",
+    "Student Name": "AVINASH CHANDRA PANDEY"
+  },
+  {
+    "S.No.": 59,
+    "Dept.": "CS",
+    "Roll No.": "CS21M004",
+    "Student Name": "BHASAMRITA SARMAH"
+  },
+  {
+    "S.No.": 60,
+    "Dept.": "CS",
+    "Roll No.": "CS21M005",
+    "Student Name": "HAJARE UTKARSHA DATTA"
+  },
+  {
+    "S.No.": 61,
+    "Dept.": "CS",
+    "Roll No.": "CS21M006",
+    "Student Name": "HAWA SINGH"
+  },
+  {
+    "S.No.": 62,
+    "Dept.": "CS",
+    "Roll No.": "CS21M007",
+    "Student Name": "HIMANSHU DOLEKAR"
+  },
+  {
+    "S.No.": 63,
+    "Dept.": "CS",
+    "Roll No.": "CS21M009",
+    "Student Name": "MALLETI SAI NIKHIL"
+  },
+  {
+    "S.No.": 64,
+    "Dept.": "CS",
+    "Roll No.": "CS21M010",
+    "Student Name": "MITHLESH KUMAR MURMU"
+  },
+  {
+    "S.No.": 65,
+    "Dept.": "CS",
+    "Roll No.": "CS21M011",
+    "Student Name": "NALLAMOLU SATHISH"
+  },
+  {
+    "S.No.": 66,
+    "Dept.": "CS",
+    "Roll No.": "CS21M012",
+    "Student Name": "NANDANAVANAM SAI PRAGNA"
+  },
+  {
+    "S.No.": 67,
+    "Dept.": "CS",
+    "Roll No.": "CS21M013",
+    "Student Name": "SALAKRAM NAGWANSHI"
+  },
+  {
+    "S.No.": 68,
+    "Dept.": "CS",
+    "Roll No.": "CS21M014",
+    "Student Name": "SHIKHER CHHAWCHHARIA"
+  },
+  {
+    "S.No.": 69,
+    "Dept.": "CS",
+    "Roll No.": "CS21M015",
+    "Student Name": "VINAY K S"
+  }
+]

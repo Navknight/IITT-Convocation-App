@@ -1,11 +1,7 @@
 import { FontAwesome6 } from "@expo/vector-icons";
-import {
-  ReactNativeZoomableView,
-  ReactNativeZoomableViewWithGestures,
-} from "@openspacelabs/react-native-zoomable-view";
 import { useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -13,19 +9,54 @@ import {
   ScrollView,
   Platform,
   Dimensions,
+  StyleSheet,
+  Button,
+  Pressable,
 } from "react-native";
+import { DataTable } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { themeColors } from "../../../themes/index";
 
 import { graduandData } from "~/constants";
 
+export function Table({ jsonData }) {
+  return (
+    <View style={styles.container}>
+      {/* Table header */}
+      <View style={styles.row}>
+        <Text style={[styles.headerCell, { width: "9%" }]}>S.No</Text>
+        <Text style={[styles.headerCell, { width: "10%" }]}>Dept.</Text>
+        <Text style={[styles.headerCell, { width: "21%" }]}>Roll No.</Text>
+        <Text style={[styles.headerCell, { width: "60%", flex: 1 }]}>
+          Student Name
+        </Text>
+      </View>
+
+      {/* Table rows */}
+      {jsonData.map((item, index) => (
+        <View key={index} style={styles.row}>
+          <Text style={[styles.cell, { width: "9%" }]}>{item["S.No."]}</Text>
+          <Text style={[styles.cell, { width: "10%" }]}>{item["Dept."]}</Text>
+          <Text style={[styles.cell, { width: "21%" }]}>
+            {item["Roll No."]}
+          </Text>
+          <Text style={[styles.cell, { width: "60%", flex: 1 }]}>
+            {item["Student Name"]}
+          </Text>
+        </View>
+      ))}
+    </View>
+  );
+}
+
 export default function Landing() {
   const ios = Platform.OS === "ios";
   const params = useLocalSearchParams();
   const key = params.list;
   const data = graduandData[key];
-  console.log(data);
+  const [table, setTable] = useState("2022");
+  console.log(data.four);
   const { height, width } = Dimensions.get("window");
   return (
     <ScrollView className="flex-1">
@@ -65,47 +96,97 @@ export default function Landing() {
             {key}
           </Text>
         </View>
-        <View className="flex-1 flex-col items-center">
-          <View
-            className="px-4 flex-1 flex-col items-center bg-white m-10"
-            style={{
-              width: width * 0.9,
-              height: height * 0.5,
-              elevation: 5,
-            }}
-          >
-            <ReactNativeZoomableView>
-              <Image
-                source={data.four}
-                resizeMode="contain"
+
+        <View>
+          {/* <Text className="text-center text-3xl font-bold mt-10">
+            2022 Batch
+          </Text>
+          <Table jsonData={data.four} />
+          <Text className="text-center text-3xl font-bold mt-10">
+            2023 Batch
+          </Text>
+          <Table jsonData={data.five} /> */}
+          <View className="flex-row items-center justify-around mt-10 mr-10 ml-10 gap-2">
+            <Pressable
+              style={{
+                backgroundColor:
+                  table === "2022" ? themeColors.bgDark : themeColors.bgLight,
+                flex: 1,
+                borderRadius: 10,
+                borderColor: themeColors.bgDark,
+                borderWidth: 2,
+              }}
+              onPress={() => setTable("2022")}
+            >
+              <Text
                 style={{
-                  width: width * 0.8,
+                  color:
+                    table === "2022" ? themeColors.bgLight : themeColors.bgDark,
                 }}
-              />
-            </ReactNativeZoomableView>
-            <Text className="text-xs text-gray-500">Double Tap To Zoom</Text>
-          </View>
-          <View
-            className="px-4 flex-1 flex-col items-center bg-white"
-            style={{
-              width: width * 0.9,
-              height: height * 0.5,
-              elevation: 5,
-            }}
-          >
-            <ReactNativeZoomableView>
-              <Image
-                source={data.five}
-                resizeMode="contain"
+                className="text-center text-bold text-3xl"
+              >
+                2022
+              </Text>
+            </Pressable>
+            <Pressable
+              style={{
+                backgroundColor:
+                  table === "2023" ? themeColors.bgDark : themeColors.bgLight,
+                flex: 1,
+
+                borderRadius: 10,
+                borderColor: themeColors.bgDark,
+                borderWidth: 2,
+              }}
+              onPress={() => setTable("2023")}
+            >
+              <Text
                 style={{
-                  width: width * 0.8,
+                  color:
+                    table === "2023" ? themeColors.bgLight : themeColors.bgDark,
                 }}
-              />
-            </ReactNativeZoomableView>
-            <Text className="text-xs text-gray-500">Double Tap To Zoom</Text>
+                className="text-bold text-3xl text-center"
+              >
+                2023
+              </Text>
+            </Pressable>
           </View>
+          {table === "2022" ? (
+            <Table jsonData={data.four} />
+          ) : (
+            <Table jsonData={data.five} />
+          )}
         </View>
       </SafeAreaView>
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 10,
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    borderColor: "#ccc",
+    borderRadius: 5,
+    margin: 10,
+  },
+  row: {
+    flexDirection: "row",
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+    paddingVertical: 5,
+  },
+  headerCell: {
+    // flex: 1,
+    fontWeight: "bold",
+    textAlign: "center",
+    margin: 5,
+  },
+  cell: {
+    // flex: 1,
+    textAlign: "center",
+    margin: 5,
+  },
+});
