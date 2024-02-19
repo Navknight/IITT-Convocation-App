@@ -1,8 +1,6 @@
 import { FontAwesome6 } from "@expo/vector-icons";
-import { faVest } from "@fortawesome/free-solid-svg-icons"; // Import the vest icon
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { useRouter } from "expo-router";
-import React, { useState } from "react";
+import React from "react";
 import {
   View,
   Text,
@@ -10,11 +8,6 @@ import {
   Platform,
   TouchableOpacity,
 } from "react-native";
-import {
-  AcademicCapIcon as Cap,
-  FilmIcon as Film,
-  QueueListIcon as Queue,
-} from "react-native-heroicons/solid";
 
 import { themeColors } from "../themes/index";
 
