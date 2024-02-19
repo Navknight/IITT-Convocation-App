@@ -8,7 +8,6 @@ import {
   Image,
   ScrollView,
   Platform,
-  Dimensions,
   StyleSheet,
   Pressable,
 } from "react-native";
@@ -55,7 +54,7 @@ export default function Landing() {
   const data = graduandData[key];
   const [table, setTable] = useState("2022");
   return (
-    <ScrollView className="flex-1">
+    <ScrollView className="flex-1 bg-white">
       <StatusBar style="light" />
       <Image
         source={require("~/assets/backgroundiitt.jpeg")}
@@ -87,21 +86,13 @@ export default function Landing() {
         <View className="px-4 flex-row justify-center items-center">
           <Text
             style={{ color: themeColors.text }}
-            className="text-3xl font-semibold"
+            className="text-3xl font-semibold text-center"
           >
             {key}
           </Text>
         </View>
 
         <View>
-          {/* <Text className="text-center text-3xl font-bold mt-10">
-            2022 Batch
-          </Text>
-          <Table jsonData={data.four} />
-          <Text className="text-center text-3xl font-bold mt-10">
-            2023 Batch
-          </Text>
-          <Table jsonData={data.five} /> */}
           <View className="flex-row items-center justify-around mt-10 mr-10 ml-10 gap-2">
             <Pressable
               style={{
@@ -162,16 +153,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: "#fff",
+    // backgroundColor: "#fff",
     borderWidth: 1,
-    borderColor: "#ccc",
-    borderRadius: 5,
+    borderColor: themeColors.bgLight,
+    borderRadius: 10,
     margin: 10,
+    backgroundColor: themeColors.bgDark,
+    color: themeColors.bgLight,
   },
   row: {
     flexDirection: "row",
     borderBottomWidth: 1,
-    borderBottomColor: "#ccc",
+    borderBottomColor: themeColors.bgLight,
     paddingVertical: 5,
   },
   headerCell: {
@@ -179,10 +172,12 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     margin: 5,
+    color: themeColors.bgLight,
   },
   cell: {
     // flex: 1,
     textAlign: "center",
     margin: 5,
+    color: themeColors.bgLight,
   },
 });

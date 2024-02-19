@@ -26,22 +26,26 @@ const Cards = (img) => {
     <View
       className="flex-1 flex-col items-center bg-white m-5 p-4"
       style={{
-        width: width * 0.9,
-        height: height * 0.5,
+        width: width * 0.7,
+        height: height * 0.45,
         elevation: 5,
         borderRadius: 10,
+        borderColor: themeColors.bgDark,
+        borderWidth: 2,
+        overflow: "hidden",
       }}
     >
-      <ReactNativeZoomableView initialZoom={0.9}>
+      <ReactNativeZoomableView>
         <Image
           source={img.img}
           resizeMode="contain"
           style={{
             width: width * 0.6,
+            height: height * 0.4,
           }}
         />
       </ReactNativeZoomableView>
-      <Text className="text-xs text-gray-500">Double Tap To Zoom</Text>
+      <Text className="text-xs text-gray-500 mt-2">Double Tap To Zoom</Text>
     </View>
   );
 };
@@ -90,17 +94,18 @@ export default function Landing() {
         <View className="px-4 flex-row justify-center items-center">
           <Text
             style={{ color: themeColors.text }}
-            className="text-3xl font-semibold"
+            className="text-3xl font-semibold text-center"
           >
             {data.title}
           </Text>
         </View>
 
-        {data?.images?.map((item, index) => {
-  console.log(item);
-  return <Cards key={index} img={item} />;
-})}
-
+        <View className="flex-col items-center justify-center">
+          {data?.images?.map((item, index) => {
+            console.log(item);
+            return <Cards key={index} img={item} />;
+          })}
+        </View>
       </SafeAreaView>
     </ScrollView>
   );

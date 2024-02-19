@@ -60,6 +60,18 @@ export default function Layout() {
           ),
         }}
       />
+      <Stack.Screen
+        name="news"
+        options={{
+          headerTitle: "News",
+          headerRight: () => (
+            <Image
+              source={require("../../../assets/IITT-logo.png")}
+              style={{ width: 80, height: 50 }}
+            />
+          ),
+        }}
+      />
     </Stack>
   );
 }

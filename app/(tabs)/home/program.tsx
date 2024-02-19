@@ -1,8 +1,4 @@
 import { FontAwesome6 } from "@expo/vector-icons";
-import {
-  ReactNativeZoomableView,
-  ReactNativeZoomableViewWithGestures,
-} from "@openspacelabs/react-native-zoomable-view";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {
@@ -11,15 +7,49 @@ import {
   Image,
   ScrollView,
   Platform,
-  Dimensions,
+  StyleSheet,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { themeColors } from "../../../themes/index";
 
+const data = [
+  { time: '15:00 hrs', program: 'Academic Procession proceeds to the dais' },
+  { time: '15:05 hrs', program: 'Invocation' },
+  { time: '15:07 hrs', program: 'Chairman declares the Convocation open' },
+  { time: '15:08 hrs', program: "Welcome Address and Director's Report" },
+  { time: '15:23 hrs', program: 'Address by the Chairman Board of Governors' },
+  { time: '15:33 hrs', program: 'Convocation Address by the Chief Guest' },
+  { time: '15:48 hrs', program: 'Award of degrees by the Director' },
+  { time: '16:53 hrs', program: 'Award of prizes by the Chief Guest' },
+  { time: '17:08 hrs', program: 'Pledge by the degree recipients' },
+  { time: '17:10 hrs', program: 'Chairman signs the record of degrees and declares the Convocation closed' },
+  { time: '17:12 hrs', program: 'National Anthem' },
+  { time: '17:14 hrs', program: 'Academic Procession departs' }
+];
+
+export function Table() {
+  return (
+    <View className="mt-5" style={styles.container}>
+      {/* Table header */}
+      <View style={styles.row}>
+        <Text style={[styles.headerCell, { width: "20%" }]}>Time</Text>
+        <Text style={[styles.headerCell, { width: "80%", flex: 1 }]}>Programme</Text>
+      </View>
+
+      {/* Table rows */}
+      {data.map((item, index) => (
+        <View key={index} style={styles.row}>
+          <Text style={[styles.cell, { width: "20%" }]}>{item["time"]}</Text>
+          <Text style={[styles.cell, { width: "80%", flex: 1 }]}>{item["program"]}</Text>
+        </View>
+      ))}
+    </View>
+  );
+}
+
 export default function Landing() {
   const ios = Platform.OS === "ios";
-  const { height, width } = Dimensions.get("window");
   return (
     <ScrollView className="flex-1 bg-white">
       <StatusBar style="light" />
@@ -59,22 +89,42 @@ export default function Landing() {
           </Text>
         </View>
 
-        <View className="px-4 space-y-2 flex-1 flex-col items-center m-10">
-          <ReactNativeZoomableView>
-            <Image
-              source={require("~/assets/program.png")}
-              style={{
-                width: width * 0.9,
-                height: height * 0.5,
-                borderWidth: 2.5,
-                borderColor: themeColors.bgDark,
-                borderRadius: 10,
-              }}
-            />
-          </ReactNativeZoomableView>
-          <Text className="text-sm text-gray-400">Double Tap To Zoom</Text>
-        </View>
+
+        <Table />
       </SafeAreaView>
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 10,
+    // backgroundColor: "#fff",
+    borderWidth: 1,
+    borderColor: themeColors.bgLight,
+    borderRadius: 10,
+    margin: 10,
+    backgroundColor: themeColors.bgDark,
+    color: themeColors.bgLight,
+  },
+  row: {
+    flexDirection: "row",
+    borderBottomWidth: 1,
+    borderBottomColor: themeColors.bgLight,
+    paddingVertical: 5,
+  },
+  headerCell: {
+    // flex: 1,
+    fontWeight: "bold",
+    textAlign: "center",
+    margin: 5,
+    color: themeColors.bgLight,
+  },
+  cell: {
+    // flex: 1,
+    textAlign: "center",
+    margin: 5,
+    color: themeColors.bgLight,
+  },
+});
