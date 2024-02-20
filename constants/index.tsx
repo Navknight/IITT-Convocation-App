@@ -42,7 +42,7 @@ export const contributors = [
 export const ConvocationProgram = [
   {
     id: 1,
-    title: "Directors Report",
+    title: "Director's Report",
     image: require("../assets/Director.jpeg"),
     desc: `Dr. Kalidindi N. Satyanarayana is the founding Director of IIT Tirupati, Andhra Pradesh. He is currently on deputation from IIT Madras, where he holds the position of Professor in the Building Technology & Construction Management Division of the Department of Civil Engineering. Dr. Satyanarayana obtained his B.Tech degree in Civil Engineering from IIT Madras. He then pursued MS and PhD degrees with a specialization in Construction Engineering and Management from Clemson University, USA. Since 1991, he has been a faculty member at IIT Madras, and in 2009, he served as a Visiting Professor at Iowa State University, USA.
       His areas of expertise include project management, construction contracts, construction productivity, construction equipment, C&D waste management, and public-private partnerships. Dr. Satyanarayana has published extensively in these areas and has received numerous awards, including the Project Management Institute (India) Distinguished Scholar Award in 2011.
@@ -59,8 +59,15 @@ export const ConvocationProgram = [
     link: "home/Speech",
     speechType: "Chief Guest",
   },
+  // {
+  //   id: 3,
+  //   title: "Institute Award",
+  //   icon: "trophy",
+  //   desc: "List of all the institute award winners of the 2022 and 2023 batches",
+  //   link: "home/award",
+  // },
   {
-    id: 3,
+    id: 4,
     title: "Board of Governors",
     icon: "people-line",
     desc: "The Board of Governors is responsible for governing and making important decisions regarding the academic and administrative matters of IIT Tirupati.",
@@ -68,7 +75,7 @@ export const ConvocationProgram = [
     link: "home/landing",
   },
   {
-    id: 4,
+    id: 5,
     title: "Senate",
     icon: "people-roof",
     desc: "The Senate of IIT Tirupati is responsible for making decisions on academic matters, including the curriculum, courses of study, and research.",
@@ -76,7 +83,7 @@ export const ConvocationProgram = [
     link: "home/landing",
   },
   {
-    id: 5,
+    id: 6,
     title: "Convocation Committees",
     icon: "people-group",
     desc: "This committee is responsible for organizing the 4th and 5th convocation of IIT Tirupati.",
@@ -97,7 +104,7 @@ export const ConvocationProgram = [
     link: "home/landing",
   },
   {
-    id: 6,
+    id: 7,
     title: "Institute News",
     icon: "newspaper",
     link: "home/news",

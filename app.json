@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "IITT Convocation 2024",
-    "slug": "convocations",
+    "slug": "convocation_iittp_2021",
     "version": "1.1.0",
     "scheme": "convocation",
     "web": {
@@ -35,16 +35,16 @@
         "foregroundImage": "./assets/IITT-logo.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.iitt.convocations",
-      "version": 2,
-      "versionCode": 2
+      "package": "com.dell.convocation_iittp_2021",
+      "version": 5,
+      "versionCode": 5
     },
     "extra": {
       "router": {
         "origin": false
       },
       "eas": {
-        "projectId": "48b73250-6a12-4110-b274-7e0c5cf6a7b0"
+        "projectId": "d8132abc-375a-4d24-b0b4-0212aab5efbb"
       }
     }
   }

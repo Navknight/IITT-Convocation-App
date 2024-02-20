@@ -1,5 +1,3 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useFocusEffect } from "@react-navigation/native";
 import { router, useLocalSearchParams } from "expo-router";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
@@ -45,41 +43,13 @@ export default function Information({ navigation }) {
     router.setParams({ refresh: "false" });
   }, [refresh]);
 
-  useEffect(() => {
-    const loadViewedNotificationIds = async () => {
-      try {
-        const ids = await AsyncStorage.getItem("viewedNotificationIds");
-        if (ids !== null) {
-          setViewedNotificationIds(JSON.parse(ids));
-        }
-      } catch (error) {
-        console.error("Error loading viewed notification IDs: ", error);
-      }
-    };
-
-    loadViewedNotificationIds();
-  }, []);
-
-  const markNotificationAsRead = async (id) => {
-    try {
+  const handleCardPress = (id) => {
+    if (!viewedNotificationIds.includes(id)) {
       const updatedViewedNotificationIds = [...viewedNotificationIds, id];
-      await AsyncStorage.setItem(
-        "viewedNotificationIds",
-        JSON.stringify(updatedViewedNotificationIds),
-      );
       setViewedNotificationIds(updatedViewedNotificationIds);
       Alert.alert("Notification Marked as Read");
-    } catch (error) {
-      console.error("Error marking notification as read: ", error);
     }
-  };
-
-  const isNotificationRead = (id) => viewedNotificationIds.includes(id);
-
-  const handleCardPress = (id) => {
-    if (!isNotificationRead(id)) {
-      markNotificationAsRead(id);
-    }
+    // Handle navigation or any other action when a notification is pressed
   };
 
   const renderNotificationCard = ({ item }) => (
@@ -87,7 +57,7 @@ export default function Information({ navigation }) {
       <View
         style={[
           styles.card,
-          isNotificationRead(item.id) ? styles.oldCard : styles.newCard,
+          viewedNotificationIds.includes(item.id) && styles.readCard,
         ]}
       >
         <Text style={styles.title}>{item.title}</Text>
@@ -126,13 +96,8 @@ const styles = StyleSheet.create({
     borderColor: themeColors.bgDark,
     borderWidth: 2,
   },
-  newCard: {
-    borderColor: themeColors.bgDark,
-    borderWidth: 2,
-  },
-  oldCard: {
-    borderColor: "#ccc", // Grey color for old notifications
-    borderWidth: 2,
+  readCard: {
+    borderColor: "#ccc", // Grey color for read notifications
   },
   title: {
     fontSize: 18,

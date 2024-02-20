@@ -72,6 +72,18 @@ export default function Layout() {
           ),
         }}
       />
+      <Stack.Screen
+        name="award"
+        options={{
+          headerTitle: "Awards",
+          headerRight: () => (
+            <Image
+              source={require("../../../assets/IITT-logo.png")}
+              style={{ width: 80, height: 50 }}
+            />
+          ),
+        }}
+      />
     </Stack>
   );
 }

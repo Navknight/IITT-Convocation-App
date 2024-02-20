@@ -124,7 +124,7 @@ const news = [
       'Ms. Vajitha. G (CEE, Ph.D. scholar) received the "Best poster presentation award" at the 35th Kerala Science Congress held at Mar Baselios Christian College of Engineering and Technology on 12th – 14th, February 2023, Kerala.',
   },
   {
-    title: "IIT TIrupati News Site",
+    title: "IIT Tirupati News Site",
     date: "2024",
     link: "https://iittp.ac.in/news",
     description: "For more news, visit the IIT Tirupati News Site",

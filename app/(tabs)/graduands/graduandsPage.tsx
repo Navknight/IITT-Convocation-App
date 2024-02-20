@@ -17,7 +17,32 @@ import { themeColors } from "../../../themes/index";
 
 import { graduandData } from "~/constants";
 
+const Btech = /[a-z][a-z][0-9][0-9]B[0-9][0-9][0-9]/i;
+const Mtech = /[a-z][a-z][0-9][0-9]M[0-9][0-9][0-9]/i;
+const Phd = /[a-z][a-z][0-9][0-9]D[0-9][0-9][0-9]/i;
+const Msc = /[a-z][a-z][0-9][0-9]S[0-9][0-9][0-9]/i;
+
+const legend = [
+  { color: "#ffcccc", label: "B.Tech" },
+  { color: "#ccffcc", label: "M.Tech/MSc" },
+  { color: "#ccccff", label: "PhD" },
+  { color: "#ffffcc", label: "MS" },
+];
+
 export function Table({ jsonData }) {
+  const getRollNumberColor = (rollNumber) => {
+    if (Btech.test(rollNumber)) {
+      return "#ffcccc"; // Light red for Btech
+    } else if (Mtech.test(rollNumber)) {
+      return "#ccffcc"; // Light green for Mtech
+    } else if (Phd.test(rollNumber)) {
+      return "#ccccff"; // Light blue for Phd
+    } else if (Msc.test(rollNumber)) {
+      return "#ffffcc"; // Light yellow for Msc
+    }
+    return "#ffffff"; // Default white if no match
+  };
+
   return (
     <View style={styles.container}>
       {/* Table header */}
@@ -32,7 +57,13 @@ export function Table({ jsonData }) {
 
       {/* Table rows */}
       {jsonData.map((item, index) => (
-        <View key={index} style={styles.row}>
+        <View
+          key={index}
+          style={[
+            styles.row,
+            { backgroundColor: getRollNumberColor(item["Roll No."]) },
+          ]}
+        >
           <Text style={[styles.cell, { width: "9%" }]}>{item["S.No."]}</Text>
           <Text style={[styles.cell, { width: "10%" }]}>{item["Dept."]}</Text>
           <Text style={[styles.cell, { width: "21%" }]}>
@@ -138,6 +169,22 @@ export default function Landing() {
               </Text>
             </Pressable>
           </View>
+          <View style={styles.legendContainer}>
+            <Text style={styles.legendTitle}>Legend:</Text>
+            <View style={styles.legend}>
+              {legend.map((item, index) => (
+                <View key={index} style={styles.legendItem}>
+                  <View
+                    style={[
+                      styles.legendColor,
+                      { backgroundColor: item.color },
+                    ]}
+                  />
+                  <Text style={styles.legendLabel}>{item.label}</Text>
+                </View>
+              ))}
+            </View>
+          </View>
           {table === "2022" ? (
             <Table jsonData={data.four} />
           ) : (
@@ -158,13 +205,12 @@ const styles = StyleSheet.create({
     borderColor: themeColors.bgLight,
     borderRadius: 10,
     margin: 10,
-    backgroundColor: themeColors.bgDark,
-    color: themeColors.bgLight,
+    backgroundColor: themeColors.bgLight,
   },
   row: {
     flexDirection: "row",
     borderBottomWidth: 1,
-    borderBottomColor: themeColors.bgLight,
+    borderBottomColor: "#ccc",
     paddingVertical: 5,
   },
   headerCell: {
@@ -172,12 +218,39 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     margin: 5,
-    color: themeColors.bgLight,
+    // color: themeColors.bgLight,
   },
   cell: {
     // flex: 1,
     textAlign: "center",
     margin: 5,
-    color: themeColors.bgLight,
+    // color: themeColors.bgLight,
+  },
+  legendContainer: {
+    marginTop: 10,
+    paddingHorizontal: 20,
+  },
+  legendTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  legend: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  legendItem: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  legendColor: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    marginRight: 10,
+  },
+  legendLabel: {
+    fontSize: 16,
   },
 });
