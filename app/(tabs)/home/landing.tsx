@@ -21,20 +21,46 @@ import { ConvocationProgram } from "~/constants";
 const ios = Platform.OS == "ios";
 
 const Table = ({ jsonData }) => {
-  console.log(jsonData);
   return (
     <View style={styles.container}>
       {/* Table header */}
       <View style={styles.row}>
-        <Text style={[styles.headerCell, { width: "25%" }]}>Role</Text>
-        <Text style={[styles.headerCell, { width: "75%", flex:1 }]}>Name</Text>
+        <Text
+          className="text-2xl"
+          style={[styles.headerCell, { width: "25%" }]}
+        >
+          {jsonData[0]["role"] ? "Role" : "Position"}
+        </Text>
+        <Text
+          className="text-2xl"
+          style={[styles.headerCell, { width: "75%", flex: 1 }]}
+        >
+          Name
+        </Text>
       </View>
 
       {/* Table rows */}
       {jsonData.map((item, index) => (
         <View key={index} style={[styles.row]}>
-          <Text style={[styles.cell, { width: "25%" }]}>{item["role"]}</Text>
-          <Text style={[styles.cell, { width: "75%", flex:1 }]}>{item["name"]}</Text>
+          <Text className="text-xl" style={[styles.cell, { width: "25%" }]}>
+            {item["role"] ? item["role"] : item["position"]}
+          </Text>
+          <View style={[styles.cell, { width: "75%", flex: 1 }]}>
+            <Text
+              style={{ color: themeColors.bgLight }}
+              className="text-center text-lg"
+            >
+              {item["name"]}
+            </Text>
+            {item["designation"] && (
+              <Text
+                style={{ color: themeColors.bgLight }}
+                className="text-center text-sm p-1"
+              >
+                {item["designation"]}
+              </Text>
+            )}
+          </View>
         </View>
       ))}
     </View>
@@ -46,7 +72,6 @@ export default function Landing() {
   const id = Number(params.id);
   const data = ConvocationProgram.find((item) => item.id === id);
   const jsonData = data.json;
-  console.log(jsonData);
 
   return (
     <ScrollView className="flex-1">
@@ -85,7 +110,9 @@ export default function Landing() {
         </View>
         {Object.keys(jsonData).map((category) => (
           <View key={category}>
-            <Text className="text-black text-2xl text-center mt-5 font-bold">{category}</Text>
+            <Text className="text-black text-4xl text-center mt-10 font-bold">
+              {category}
+            </Text>
 
             <Table jsonData={jsonData[category]} />
           </View>

@@ -10,13 +10,20 @@ const ios = Platform.OS == "ios";
 const ChiefGuest = () => {
   return (
     <Text className="text-gray-800 text-center text-xl m-2 p-2">
-      Mr. Dharmendra Pradhan holds the esteemed position of the Honorable
-      Education Minister of India. He has been a member of the Bharatiya Janata
-      Party (BJP) since 1986 and has been elected as a Member of Parliament (MP)
-      for the Rajya Sabha from Madhya Pradesh. He has held various positions in
-      the Government of India, including the Minister of Petroleum and Natural
-      Gas and the Minister of Skill Development and Entrepreneurship. He has
-      also been a member of the 14th Lok Sabha and the 15th Lok Sabha of India.
+      Mr. Dharmendra Pradhan, currently serving as the Education Minister of
+      India, brings a wealth of experience and expertise to his role. With a
+      strong commitment to enhancing the educational landscape of the nation,
+      Mr. Pradhan has been instrumental in implementing various policies and
+      initiatives aimed at promoting access to quality education for all. His
+      dedication to fostering innovation and excellence in the education sector
+      has earned him recognition both nationally and internationally. As the
+      Chief Guest for the convocation ceremony, Mr. Dharmendra Pradhan embodies
+      the government's vision for a progressive and inclusive education system.
+      His presence underscores the importance of education as a catalyst for
+      individual empowerment and national development. Through his leadership,
+      Mr. Pradhan continues to champion initiatives that empower students and
+      educators alike, driving India towards a brighter and more prosperous
+      future.
     </Text>
   );
 };
@@ -231,7 +238,9 @@ export default function Speech() {
             style={{ color: themeColors.text }}
             className="text-3xl font-semibold"
           >
-            {speechType === "Chief Guest" ? "Chief Guest" : "Director's Report"}
+            {speechType === "Chief Guest"
+              ? "Mr. Dharmendra Pradhan"
+              : "Director's Report"}
           </Text>
         </View>
 

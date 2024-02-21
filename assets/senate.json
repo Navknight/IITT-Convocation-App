@@ -1,0 +1,217 @@
+{
+  "Senate": [
+    {
+      "name": "Prof. K N Satyanarayana",
+      "position": "Chairman",
+      "designation": "Director, IIT Tirupati"
+    },
+    {
+      "name": "Shri Sumit Kumar Biswas",
+      "position": "Secretary",
+      "designation": "Registrar, IIT Tirupati"
+    },
+    {
+      "name": "Prof. KSMS Raghavarao",
+      "position": "Member",
+      "designation": "Dean, Finance & Administration"
+    },
+    {
+      "name": "Prof. Sasidhar Gumma",
+      "position": "Member",
+      "designation": "Dean, International and Alumni Affairs"
+    },
+    {
+      "name": "Prof. Muthukumar Palanisamy",
+      "position": "Member",
+      "designation": "Dean, Faculty Affairs"
+    },
+    {
+      "name": "Prof. A Murali Krishna",
+      "position": "Member",
+      "designation": "Dean, Planning and Infrastructure"
+    },
+    {
+      "name": "Prof. E Anil Kumar",
+      "position": "Member",
+      "designation": "Dean, Sponsored Research and Consultancy"
+    },
+    {
+      "name": "Prof. N N Murty",
+      "position": "Member",
+      "designation": "Dean, Student Affairs"
+    },
+    {
+      "name": "Prof. Sai Rama Krishna Gorthi",
+      "position": "Member",
+      "designation": "Dean, Academic Affairs"
+    },
+    {
+      "name": "Prof. K Sethupathi",
+      "position": "Member",
+      "designation": "Professor, Physics, IIT Madras"
+    },
+    {
+      "name": "Prof. Pramod K Nayar",
+      "position": "Member",
+      "designation": "Professor, English, University of Hyderabad"
+    },
+    {
+      "name": "Prof. N Venkata Reddy",
+      "position": "Member",
+      "designation": "Professor, Mechanical Engineering, IIT Hyderabad"
+    },
+    {
+      "name": "Mr. Daiva Prakash Geddam",
+      "position": "Member",
+      "designation": "Senior General Manager, Amara Raja Batteries Ltd., Tirupati"
+    },
+    {
+      "name": "Dr. M Durga Rao",
+      "position": "Member",
+      "designation": "Scientist, NARL, Gadanki"
+    },
+    {
+      "name": "Prof. Thamida Sunil Kumar",
+      "position": "Member",
+      "designation": "HoD, Chemical Engineering"
+    },
+    {
+      "name": "Prof. Gouriprasanna Roy",
+      "position": "Member",
+      "designation": "HoD, Chemistry"
+    },
+    {
+      "name": "Prof. Biligiri Krishna Prapoorna",
+      "position": "Member",
+      "designation": "HoD, Civil and Environmental Engineering"
+    },
+    {
+      "name": "Prof. Venkata Ramana Badarla",
+      "position": "Member",
+      "designation": "HOD, Computer Science and Engineering"
+    },
+    {
+      "name": "Dr. K P Naveen",
+      "position": "Member",
+      "designation": "HOD, Electrical Engineering"
+    },
+    {
+      "name": "Dr. Prabha Shankar Dwivedi",
+      "position": "Member",
+      "designation": "HOD, Humanities and Social Sciences"
+    },
+    {
+      "name": "Dr. Panchatcharam Mariappan",
+      "position": "Member",
+      "designation": "HOD, Mathematics and Statistics"
+    },
+    {
+      "name": "Prof. Mamilla Ravi Sankar",
+      "position": "Member",
+      "designation": "HOD, Mechanical Engineering"
+    },
+    {
+      "name": "Dr. Reetesh Kumar Gangwar",
+      "position": "Member",
+      "designation": "HOD, Physics"
+    },
+    {
+      "name": "Prof. Anki Reddy Katha",
+      "position": "Member",
+      "designation": "Professor, Chemical Engineering"
+    },
+    {
+      "name": "Prof. Suresh Jain",
+      "position": "Member",
+      "designation": "Professor, Civil & Environmental Engineering"
+    },
+    {
+      "name": "Dr. M Nabil",
+      "position": "Member",
+      "designation": "Assistant Professor, Chemical Engineering"
+    },
+    {
+      "name": "Dr. Debasish Mondal",
+      "position": "Member",
+      "designation": "Associate Professor, Chemistry"
+    },
+    {
+      "name": "Dr. Gowri Asaithambi",
+      "position": "Member",
+      "designation": "Associate Professor, Civil and Environmental Engineering"
+    },
+    {
+      "name": "Dr. Ramakrishna G",
+      "position": "Member",
+      "designation": "Assistant Professor, Computer Science and Engineering"
+    },
+    {
+      "name": "Dr. Pooja Vyavahare",
+      "position": "Member",
+      "designation": "Assistant Professor, Electrical Engineering"
+    },
+    {
+      "name": "Dr. Vaneet Kashyap",
+      "position": "Member",
+      "designation": "Assistant Professor, Humanities and Social Sciences"
+    },
+    {
+      "name": "Dr. Shilpak Banerjee",
+      "position": "Member",
+      "designation": "Assistant Professor, Mathematics and Statistics"
+    },
+    {
+      "name": "Dr. Girish Kumar Rajan",
+      "position": "Member",
+      "designation": "Assistant Professor, Mechanical Engineering"
+    },
+    {
+      "name": "Dr. Shaon Sahoo",
+      "position": "Member",
+      "designation": "Assistant Professor, Physics"
+    },
+    {
+      "name": "Dr. Durga Prasad Challa",
+      "position": "Invitee",
+      "designation": "Chairperson, Admissions"
+    },
+    {
+      "name": "Dr. Rajesh S",
+      "position": "Invitee",
+      "designation": "Advisor, Academic Courses"
+    },
+    {
+      "name": "Dr. Rajesh Viswanathan",
+      "position": "Invitee",
+      "designation": "Associate Dean, Academic Affairs, IISER Tirupati"
+    },
+    {
+      "name": "Dr. Degala Venkata Kiran",
+      "position": "Invitee",
+      "designation": "Workshop In-charge"
+    },
+    {
+      "name": "Dr. Prasanna Venkatesh Sampath",
+      "position": "Invitee",
+      "designation": "Chairperson, Council of Wardens"
+    },
+    {
+      "name": "Mr. Shameer K K",
+      "position": "Invitee",
+      "designation": "Assistant Librarian"
+    },
+    {
+      "name": "Students General Secretary",
+      "position": "Special Invitee"
+    },
+    {
+      "name": "Academic Affairs Secretary",
+      "position": "Special Invitee"
+    },
+    {
+      "name": "Research Affairs Secretary",
+      "position": "Special Invitee"
+    }
+  ]
+}
+

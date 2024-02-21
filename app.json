@@ -36,7 +36,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.dell.convocation_iittp_2021",
-      "versionCode": 6
+      "versionCode": 7
     },
     "extra": {
       "router": {

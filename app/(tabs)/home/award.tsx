@@ -30,9 +30,8 @@ function Card({ props }) {
         backgroundColor: "white",
         borderColor: themeColors.bgDark, // Assuming themes.bgDark holds the desired color value
         borderWidth: 2, // Adjust the width as needed
-        borderStyle: "solid", // You can change this to 'dashed', 'dotted', etc.
         alignItems: "center", // Center the content horizontally
-        padding: 20, // Adjust the gap between the image and text
+        padding: 15, // Adjust the gap between the image and text
       }}
     >
       <Image
@@ -46,10 +45,19 @@ function Card({ props }) {
         }}
       />
       <View style={{ marginTop: 10 }}>
-        <Text className="text-center text-2xl font-bold m-3">
+        <Text
+          style={{ color: themeColors.bgDark }}
+          className="text-center text-2xl font-bold m-3"
+        >
           {props.Award}
         </Text>
-        <Text className="text-2xl m-2 text-center">{props.Name.toUpperCase()}</Text>
+        <Text className="text-2xl m-1 text-center">
+          {props.Name.split(" ").map((item, index, array) =>
+            index !== array.length - 1
+              ? item.charAt(0).toUpperCase() + item.slice(1).toLowerCase() + " "
+              : item.charAt(0).toUpperCase() + item.slice(1).toLowerCase(),
+          )}
+        </Text>
         <Text className="text-xl m-2 text-center">{props.Details}</Text>
       </View>
     </View>

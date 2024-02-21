@@ -68,11 +68,11 @@ export default function Information({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <FlatList
+      {notifications[0] ? <FlatList
         data={notifications}
         renderItem={renderNotificationCard}
         keyExtractor={(item) => item.id}
-      />
+      /> : <Text className="text-gray-500 text-center">All updates about the convocation will appear here!</Text>}
     </View>
   );
 }

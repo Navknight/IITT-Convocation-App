@@ -20,7 +20,6 @@ interface Props {
 export default function Landing(props) {
   const toUse = useLocalSearchParams();
   const item = lists[toUse.list][toUse.index]
-  console.log(item)
   return (
     <ScrollView className="flex-1">
       <StatusBar style="light" />

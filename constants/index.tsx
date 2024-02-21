@@ -53,7 +53,7 @@ export const ConvocationProgram = [
   },
   {
     id: 2,
-    title: "Chief Guest's Address",
+    title: "Chief Guest",
     image: require("../assets/ChiefGuest.jpg"),
     desc: "Mr. Dharmendra Pradhan holds the esteemed position of the Honorable Education Minister of India",
     link: "home/speech",
@@ -71,7 +71,7 @@ export const ConvocationProgram = [
     title: "Board of Governors",
     icon: "people-line",
     desc: "The Board of Governors is responsible for governing and making important decisions regarding the academic and administrative matters of IIT Tirupati.",
-    images: [require("~/assets/board-of-governors.png")],
+    json: require("~/assets/board-of-governors.json"),
     link: "home/landing",
   },
   {
@@ -79,7 +79,7 @@ export const ConvocationProgram = [
     title: "Senate",
     icon: "people-roof",
     desc: "The Senate of IIT Tirupati is responsible for making decisions on academic matters, including the curriculum, courses of study, and research.",
-    images: [require("~/assets/senate1.png"), require("~/assets/senate2.png")],
+    json: require("~/assets/senate.json"),
     link: "home/landing",
   },
   {
