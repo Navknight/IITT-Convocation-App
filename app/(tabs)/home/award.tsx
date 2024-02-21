@@ -1,8 +1,6 @@
 import { FontAwesome6 } from "@expo/vector-icons";
-import { ReactNativeZoomableView } from "@openspacelabs/react-native-zoomable-view";
-import { useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -10,10 +8,13 @@ import {
   Dimensions,
   Platform,
   ScrollView,
+  Pressable,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { themeColors } from "../../../themes/index";
+
+import { awardData } from "~/constants";
 const { width, height } = Dimensions.get("window");
 const ios = Platform.OS == "ios";
 
@@ -22,38 +23,42 @@ function Card({ props }) {
     <View
       style={{
         borderRadius: 10,
-        height: ios ? height * 0.3 : height * 0.3,
-        width: width * 0.4,
+        minHeight: height * 0.4,
+        width: width * 0.8,
         elevation: 5,
-        margin: ios ? -(height * 0.08) : 15,
+        margin: 15,
         backgroundColor: "white",
         borderColor: themeColors.bgDark, // Assuming themes.bgDark holds the desired color value
         borderWidth: 2, // Adjust the width as needed
         borderStyle: "solid", // You can change this to 'dashed', 'dotted', etc.
         alignItems: "center", // Center the content horizontally
-        paddingTop: 20, // Adjust the gap between the image and text
+        padding: 20, // Adjust the gap between the image and text
       }}
     >
       <Image
-        source={props.image}
+        source={props.Image}
         style={{
-          height: 100,
-          width: 100,
+          height: 150,
+          width: 150,
           borderRadius: 100,
+          borderColor: themeColors.bgDark,
+          borderWidth: 2,
         }}
       />
       <View style={{ marginTop: 10 }}>
-        <Text style={{ textAlign: "center", fontSize: 20 }}>{props.name}</Text>
-        <Text style={{ textAlign: "center", fontSize: 12, marginTop: -10 }}>
-          {props.desc}
+        <Text className="text-center text-2xl font-bold m-3">
+          {props.Award}
         </Text>
-        <Text style={{ textAlign: "center" }}>{props.item.email}</Text>
+        <Text className="text-2xl m-2 text-center">{props.Name.toUpperCase()}</Text>
+        <Text className="text-xl m-2 text-center">{props.Details}</Text>
       </View>
     </View>
   );
 }
 
 export default function Award() {
+  const data = awardData;
+  const [cards, setCards] = useState("2023");
   return (
     <ScrollView className="flex-1">
       <StatusBar style="light" />
@@ -91,7 +96,60 @@ export default function Award() {
           </Text>
         </View>
 
-        <View className="flex-col items-center justify-center" />
+        <View>
+          <View className="flex-row items-center justify-around mt-10 mr-10 ml-10 gap-2">
+            <Pressable
+              style={{
+                backgroundColor:
+                  cards === "2022" ? themeColors.bgDark : themeColors.bgLight,
+                flex: 1,
+                borderRadius: 10,
+                borderColor: themeColors.bgDark,
+                borderWidth: 2,
+              }}
+              onPress={() => setCards("2022")}
+            >
+              <Text
+                style={{
+                  color:
+                    cards === "2022" ? themeColors.bgLight : themeColors.bgDark,
+                }}
+                className="text-center text-bold text-3xl"
+              >
+                2022
+              </Text>
+            </Pressable>
+            <Pressable
+              style={{
+                backgroundColor:
+                  cards === "2023" ? themeColors.bgDark : themeColors.bgLight,
+                flex: 1,
+
+                borderRadius: 10,
+                borderColor: themeColors.bgDark,
+                borderWidth: 2,
+              }}
+              onPress={() => setCards("2023")}
+            >
+              <Text
+                style={{
+                  color:
+                    cards === "2023" ? themeColors.bgLight : themeColors.bgDark,
+                }}
+                className="text-bold text-3xl text-center"
+              >
+                2023
+              </Text>
+            </Pressable>
+          </View>
+          <View className="flex-col items-center justify-center">
+            {Object.keys(data).map((category) => {
+              return data[cards].map((item, index) => {
+                return <Card key={index} props={item} />;
+              });
+            })}
+          </View>
+        </View>
       </SafeAreaView>
     </ScrollView>
   );

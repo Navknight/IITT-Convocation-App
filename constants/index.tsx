@@ -196,98 +196,112 @@ export const graduandData = {
 };
 
 export const awardData = {
-  five: [
+  "2023": [
     {
-      Name: "TIRUPATHI SAI RISHITHA",
-      Award: "Best Student in Mechanical Engineering",
-      Details: "Outstanding performance in academics and research",
-      Image: require("~/assets/five/10_ME19B041 TIRUPATHI SAI RISHITHA.jpg"),
+      Name: "DEBESHEE DAS",
+      Details:
+        "Best academic performance in the B.Tech Programme in COMPUTER SCIENCE AND ENGINEERING",
+      Image: require("~/assets/five/1_CS19B012  DEBESHEE DAS.jpg"),
+      Award: "President’s Prize",
     },
     {
       Name: "NOBLE SAJI MATHEWS",
-      Award: "Excellence in Chemical Engineering",
       Details:
-        "Demonstrated excellence in both curricular and extracurricular activities",
+        "All round proficiency in curricular and extra curricular activities in the B.Tech  Programme",
       Image: require("~/assets/five/2_CH19B023 NOBLE SAJI MATHEWS.jpeg"),
+      Award: "Governor’s Prize",
     },
     {
-      Name: "GIRIDARA SRINIVAAS MS",
-      Award: "Prof. Kamatam Krishnaiah Award",
-      Details: "Highest academic performance in Chemical Engineering",
+      Name: "GIRIDARA SRINIVAAS M S",
+      Details:
+        "Best academic performance in the B.Tech Programme in CHEMICAL ENGINEERING",
       Image: require("~/assets/five/3_CH19B009 GIRIDARA SRINIVAAS M S.jpg"),
+      Award: "Prof. Kamatam Krishnaiah Award",
     },
     {
       Name: "JOSE ENOCH KINGSON S",
-      Award: "Top Performer in Civil Engineering",
-      Details: "Achieved the best academic performance in Civil Engineering",
+      Details:
+        "Best academic performance in the B.Tech Programme in CIVIL ENGINEERING",
       Image: require("~/assets/five/4_CE19B013_JOSE ENOCH KINGSON S.jpg"),
+      Award: "Aarvee Associates Prize",
     },
     {
       Name: "ARJUN K",
-      Award: "Institute Prize",
       Details:
-        "Recognized for the best academic performance in the M.Tech Programme in Civil Engineering",
+        "Best academic performance in the M.Tech Programme in CIVIL ENGINEERING",
       Image: require("~/assets/five/5_CE21M019 ARJUN K.jpg"),
+      Award: "Institute Prize",
     },
     {
       Name: "DEBESHEE DAS",
-      Award: "President's Gold Medal",
-      Details: "Exceptional performance in Computer Science and Engineering",
-      Image: require("~/assets/five/6_CS19B012_DEBESHEE DAS.jpg"),
+      Details:
+        "Best academic performance in the B.Tech Programme in COMPUTER SCIENCE AND ENGINEERING",
+      Image: require("~/assets/five/1_CS19B012  DEBESHEE DAS.jpg"),
+      Award: "Institute Prize",
     },
     {
       Name: "SHIKHER CHHAWCHHARIA",
-      Award: "Ramakrishnan & Lakshmikanthan Memorial Prize",
       Details:
-        "Best academic performance in the M.Tech Programme in Computer Science and Engineering",
+        "Best academic performance in the M.Tech Programme in COMPUTER SCIENCE AND ENGINEERING",
       Image: require("~/assets/five/7_CS21M014 SHIKHER CHHAWCHHARIA.jpg"),
+      Award: "Ramakrishnan & Lakshmikanthan Memorial Prize",
     },
     {
-      Name: "Abhimenyu Pathania",
-      Award: "Amara Raja Prize",
-      Details: "Outstanding performance in Electrical Engineering",
+      Name: "ABHIMANYU",
+      Details:
+        "Best academic performance in the B.Tech Programme in ELECTRICAL ENGINEERING",
       Image: require("~/assets/five/8_EE19B045 Abhimenyu Pathania.png"),
+      Award: "Amara Raja Prize",
     },
     {
       Name: "SRIRAM RAMESH",
-      Award: "Institute Prize",
       Details:
-        "Recognized for the best academic performance in the M.Tech Programme in Electrical Engineering",
+        "Best academic performance in the M.Tech Programme in ELECTRICAL ENGINEERING",
       Image: require("~/assets/five/9_EE21M024 SRIRAM RAMESH.png"),
+      Award: "Institute Prize",
     },
     {
-      Name: "Mukund S",
-      Award: "Institute Prize",
+      Name: "TIRUPATHI SAI RISHITHA",
       Details:
-        "Acknowledged for exceptional achievements in Mechanical Engineering",
+        "Best academic performance in the B.Tech Programme in MECHANICAL ENGINEERING",
+      Image: require("~/assets/five/10_ME19B041 TIRUPATHI SAI RISHITHA.jpg"),
+      Award: "ITC Ltd. Prize",
+    },
+    {
+      Name: "MUKUND S",
+      Details:
+        "Best academic performance in the M.Tech Programme in MECHANICAL ENGINEERING",
       Image: require("~/assets/five/11_ME21M006 Mukund S.jpg"),
-    },
-    {
-      Name: "Manisa Maity",
-      Award: "Institute Award",
-      Details: "Achieved the best academic performance in the M.Sc Programme",
-      Image: require("~/assets/five/12_MA21M006 Manisa Maity.jpg"),
-    },
-    {
-      Name: "Udit Banerjee",
-      Award: "Prof. T Srinivasan Natarajan Award",
-      Details: "Highest academic performance in Physics",
-      Image: require("~/assets/five/13_PH21M013 Udit Banerjee.jpg"),
-    },
-    {
-      Name: "S SRIVIDYA",
       Award: "Institute Prize",
-      Details: "Best academic performance in the M.Sc Programme in Chemistry",
-      Image: require("~/assets/five/14_CY21M008 S SRIVIDYA.jpg"),
     },
     {
-      Name: "UTHRADEVI",
-      Award: "Civil Engineering Excellence Award",
-      Details: "Recognized for outstanding achievements in Civil Engineering",
+      Name: "MANISA MAITY",
+      Details:
+        "Best academic performance in the M.Sc Programme in MATHEMATICS AND STATISTICS",
+      Image: require("~/assets/five/12_MA21M006 Manisa Maity.jpg"),
+      Award: "Institute Prize",
+    },
+    {
+      Name: "UDIT BANERJEE",
+      Details: "Best academic performance in the M.Sc Programme in PHYSICS",
+      Image: require("~/assets/five/13_PH21M013 Udit Banerjee.jpg"),
+      Award: "Prof. T Srinivasan Natarajan Award",
+    },
+    {
+      Name: "S. SRIVIDYA",
+      Details: "Best academic performance in the M.Sc Programme in CHEMISTRY",
+      Image: require("~/assets/five/14_CY21M008 S SRIVIDYA.jpg"),
+      Award: "Institute Prize",
+    },
+    {
+      Name: "Uthradevi K",
+      Details:
+        "Best Ph.D. thesis entitled A RESOURCE-EFFICIENT AND WASTE FREE POINT -OF-USE DISINFECTION SYSTEM in",
       Image: require("~/assets/five/15_CE18D006 UTHRADEVI.jpeg"),
+      Award: "First Dean's Prize",
     },
   ],
-  four: [
+  "2022": [
     {
       Name: "Soumitro Vyapari",
       Award: "President’s Prize",
