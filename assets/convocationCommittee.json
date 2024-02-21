@@ -1,0 +1,439 @@
+{
+    "Convocation Attire":[
+    {
+      "name": "Dr. Rahul Sirohi",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Dr. Vishnu C Rajan",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Angshuman Roy",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Ranjan Modak",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Ameer Zerwani",
+      "role": "Member"
+    }
+  ],
+  
+  "Design": [
+    {
+      "name": "Dr. Vinay Pramod M",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Dr. Subrahmanyam Gorthi",
+      "role": "Advisor"
+    },
+    {
+      "name": "Dr. Anup Basak",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Viju Nair",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Abhinay Reddy",
+      "role": "Member"
+    },
+    {
+      "name": "Mrs. Avanthi",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Mahesh",
+      "role": "Member"
+    }
+  ],
+  "Finance": [
+    {
+      "name": "Prof. KSMS Raghavarao",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Prof. Muthukumar",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Yujendra Mitikiri",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Chandra Sekhar Bahinipati",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Rajan Babu L",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. K Prasad Rao",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. SL Pradeep Valan",
+      "role": "Member"
+    }
+  ],
+  
+  "Hospitality": [
+    {
+      "name": "Prof. N N Murty",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Dr. N Venkaiah",
+      "role": "Advisor"
+    },
+    {
+      "name": "Dr. Prasanna V Sampath",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Parthajit Mohapatra",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Kalidas Yeturu",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Brindha Moorthy",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Ankit Joglekar",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Venkaiah C",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Govind Narayan Sahu",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Rama Rao",
+      "role": "Member"
+    },
+    {
+      "name": "Ms. Sudharani",
+      "role": "Member"
+    },
+    {
+      "name": "Mess Affairs Secretary",
+      "role": "Member"
+    },
+    {
+      "name": "Hostel Affairs Secretary",
+      "role": "Member"
+    }
+  ],
+  
+  "PA Systems,Photo,Video And Web Costing": [
+    {
+      "name": "Prof. Venkata Ramana Badarla",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Dr. Panchatcharam M",
+      "role": "Advisor"
+    },
+    {
+      "name": "Dr. Girish Kumar R",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Chalavadi Vishnu",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Raghavendra K",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Baburaj",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Vamsi P",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. T Senthil",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Akshai P S",
+      "role": "Member"
+    }
+  ],
+
+  "Programme": [
+    {
+      "name": "Dr. Prabha Shankar Dwivedi",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Prof. Sasidhar Gumma",
+      "role": "Advisor"
+    },
+    {
+      "name": "Dr. K P Naveen",
+      "role": "Convenor"
+    },
+    {
+      "name": "Dr. Koteswara Rao Bommisetti",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Murari Singh",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Pooja Vyavahare",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. B Ravinder",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Shihabudheen M",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Sriram Sundar",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Sridhar Chimalakonda",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Vaneet Kashyap",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. T Sathish Kumar",
+      "role": "Member"
+    }
+  ]
+,
+
+  "Reception": [
+    {
+      "name": "Dr. Subbareddy Daggumati",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Prof. Suresh Jain",
+      "role": "Advisor"
+    },
+    {
+      "name": "Dr. Brindha M",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Bibhuti Mary Kachhap",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Prasanna Kumar Behera",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Ramesh Patil",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Jayanarayan T Tudu",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Chaman Mehta",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. P Midhun Kumar",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Y Suravardhana Reddy",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Sahad P",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Mahesh Kumar",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Ramesh Midathana",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Venkat Ramana",
+      "role": "Member"
+    }
+  ],
+  
+  "Security Arrangements": [
+    {
+      "name": "Dr. Vikram Kumar P",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Dr. Roshan Karan Srivastav",
+      "role": "Advisor"
+    },
+    {
+      "name": "Dr. Bharath",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Ajin George Joseph",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. K Srujana",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Ishapathik Das",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Shilpak Banerjee",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Sourav Chakraborty",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Dinesh Khanna",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Chakra Varthi Kandregula",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. G Ramoji Rao",
+      "role": "Member"
+    }
+  ],
+  
+  "Steering Committee": [
+    {
+      "name": "Prof. K N Satyanarayana",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Mr. Sumit Biswas",
+      "role": "Member Secretary and Convenor"
+    },
+    {
+      "name": "Prof. Rama Krishna Gorthi",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Muthukumar",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. A Murali Krishna",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Sasidhar Gumma",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. Raghava Rao",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. E Anil Kumar",
+      "role": "Member"
+    },
+    {
+      "name": "Prof. N N Murty",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Chaman Mehta",
+      "role": "Member"
+    },
+    {
+      "name": "Chairpersons and Advisors of all the other Committees",
+      "role": ""
+    }
+  ],
+  
+  "Works Committee": [
+    {
+      "name": "Dr. Janaki Ramaiah",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Prof. A Murali Krishna",
+      "role": "Advisor"
+    },
+    {
+      "name": "Dr. Jashnav Pancheti",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. Nityadharan",
+      "role": "Member"
+    },
+    {
+      "name": "Dr. A V Rahul",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. RKS Chaitanya",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Senthamil Selvan",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Mallikarjuna",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Sadgurumoorthy",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Venkata Subba Reddy",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Chaitanya Subba Reddy",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. Manoj",
+      "role": "Member"
+    },
+    {
+      "name": "Mr. G Aravind",
+      "role": "Member"
+    }
+  ]
+}

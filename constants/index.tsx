@@ -48,7 +48,7 @@ export const ConvocationProgram = [
       His areas of expertise include project management, construction contracts, construction productivity, construction equipment, C&D waste management, and public-private partnerships. Dr. Satyanarayana has published extensively in these areas and has received numerous awards, including the Project Management Institute (India) Distinguished Scholar Award in 2011.
       During his tenure at IIT Madras, he held various positions such as Advisor - Alumni Affairs (2004-2009), Chairman - Engineering Unit (2010-2013), and Chairman of the Implementation Committee for IIT Madras Research Park - Phase II (1.2 million sq.ft. facility). He has also contributed to the establishment of new campuses, including IIM Trichy, IIT Indore, and IIT Jodhpur, by serving on their respective committees.
       Dr. Satyanarayana currently serves as the Chairman of the Academic Advisory Group at Project Management Institute (PMI) India and Vice-Chairman of the Board of Advisors at The Glass Academy. He is an Expert Member on the Board of Management of Building Materials & Promotion Council (BMTPC) and serves on the governing boards of academic institutions such as IISER Tirupati, NIT - Tadepalligudem, IIITDM - Kurnool, IIIT Sri City, AIIMS - Mangalagiri, and RGKUT. Additionally, he holds the position of Independent Director on five company boards.`,
-    link: "home/Speech",
+    link: "home/speech",
     speechType: "Director",
   },
   {
@@ -56,16 +56,16 @@ export const ConvocationProgram = [
     title: "Chief Guest's Address",
     image: require("../assets/ChiefGuest.jpg"),
     desc: "Mr. Dharmendra Pradhan holds the esteemed position of the Honorable Education Minister of India",
-    link: "home/Speech",
+    link: "home/speech",
     speechType: "Chief Guest",
   },
-  // {
-  //   id: 3,
-  //   title: "Institute Award",
-  //   icon: "trophy",
-  //   desc: "List of all the institute award winners of the 2022 and 2023 batches",
-  //   link: "home/award",
-  // },
+  {
+    id: 3,
+    title: "Institute Awards",
+    icon: "trophy",
+    desc: "List of all the institute award winners of the 2022 and 2023 batches",
+    link: "home/award",
+  },
   {
     id: 4,
     title: "Board of Governors",
@@ -87,20 +87,7 @@ export const ConvocationProgram = [
     title: "Convocation Committees",
     icon: "people-group",
     desc: "This committee is responsible for organizing the 4th and 5th convocation of IIT Tirupati.",
-    images: [
-      require("~/assets/convocationCommittee1.png"),
-      require("~/assets/convocationCommittee2.png"),
-      require("~/assets/convocationCommittee3.png"),
-      require("~/assets/convocationCommittee4.png"),
-      require("~/assets/convocationCommittee5.png"),
-      require("~/assets/convocationCommittee6.png"),
-      require("~/assets/convocationCommittee7.png"),
-      require("~/assets/convocationCommittee8.png"),
-      require("~/assets/convocationCommittee9.png"),
-      require("~/assets/convocationCommittee10.png"),
-      require("~/assets/convocationCommittee11.png"),
-      require("~/assets/convocationCommittee12.png"),
-    ],
+    json: require("~/assets/convocationCommittee.json"),
     link: "home/landing",
   },
   {
@@ -109,7 +96,7 @@ export const ConvocationProgram = [
     icon: "newspaper",
     link: "home/news",
     desc: "This section provides updates on the latest events and developments taking place at the campus of IIT Tirupati.",
-  }
+  },
 ];
 
 export const graduands = [
@@ -206,4 +193,213 @@ export const graduandData = {
     four: require("~/assets/json/4th-ph.json"),
     five: require("~/assets/json/5th-ph.json"),
   },
+};
+
+export const awardData = {
+  five: [
+    {
+      Name: "TIRUPATHI SAI RISHITHA",
+      Award: "Best Student in Mechanical Engineering",
+      Details: "Outstanding performance in academics and research",
+      Image: require("~/assets/five/10_ME19B041 TIRUPATHI SAI RISHITHA.jpg"),
+    },
+    {
+      Name: "NOBLE SAJI MATHEWS",
+      Award: "Excellence in Chemical Engineering",
+      Details:
+        "Demonstrated excellence in both curricular and extracurricular activities",
+      Image: require("~/assets/five/2_CH19B023 NOBLE SAJI MATHEWS.jpeg"),
+    },
+    {
+      Name: "GIRIDARA SRINIVAAS MS",
+      Award: "Prof. Kamatam Krishnaiah Award",
+      Details: "Highest academic performance in Chemical Engineering",
+      Image: require("~/assets/five/3_CH19B009 GIRIDARA SRINIVAAS M S.jpg"),
+    },
+    {
+      Name: "JOSE ENOCH KINGSON S",
+      Award: "Top Performer in Civil Engineering",
+      Details: "Achieved the best academic performance in Civil Engineering",
+      Image: require("~/assets/five/4_CE19B013_JOSE ENOCH KINGSON S.jpg"),
+    },
+    {
+      Name: "ARJUN K",
+      Award: "Institute Prize",
+      Details:
+        "Recognized for the best academic performance in the M.Tech Programme in Civil Engineering",
+      Image: require("~/assets/five/5_CE21M019 ARJUN K.jpg"),
+    },
+    {
+      Name: "DEBESHEE DAS",
+      Award: "President's Gold Medal",
+      Details: "Exceptional performance in Computer Science and Engineering",
+      Image: require("~/assets/five/6_CS19B012_DEBESHEE DAS.jpg"),
+    },
+    {
+      Name: "SHIKHER CHHAWCHHARIA",
+      Award: "Ramakrishnan & Lakshmikanthan Memorial Prize",
+      Details:
+        "Best academic performance in the M.Tech Programme in Computer Science and Engineering",
+      Image: require("~/assets/five/7_CS21M014 SHIKHER CHHAWCHHARIA.jpg"),
+    },
+    {
+      Name: "Abhimenyu Pathania",
+      Award: "Amara Raja Prize",
+      Details: "Outstanding performance in Electrical Engineering",
+      Image: require("~/assets/five/8_EE19B045 Abhimenyu Pathania.png"),
+    },
+    {
+      Name: "SRIRAM RAMESH",
+      Award: "Institute Prize",
+      Details:
+        "Recognized for the best academic performance in the M.Tech Programme in Electrical Engineering",
+      Image: require("~/assets/five/9_EE21M024 SRIRAM RAMESH.png"),
+    },
+    {
+      Name: "Mukund S",
+      Award: "Institute Prize",
+      Details:
+        "Acknowledged for exceptional achievements in Mechanical Engineering",
+      Image: require("~/assets/five/11_ME21M006 Mukund S.jpg"),
+    },
+    {
+      Name: "Manisa Maity",
+      Award: "Institute Award",
+      Details: "Achieved the best academic performance in the M.Sc Programme",
+      Image: require("~/assets/five/12_MA21M006 Manisa Maity.jpg"),
+    },
+    {
+      Name: "Udit Banerjee",
+      Award: "Prof. T Srinivasan Natarajan Award",
+      Details: "Highest academic performance in Physics",
+      Image: require("~/assets/five/13_PH21M013 Udit Banerjee.jpg"),
+    },
+    {
+      Name: "S SRIVIDYA",
+      Award: "Institute Prize",
+      Details: "Best academic performance in the M.Sc Programme in Chemistry",
+      Image: require("~/assets/five/14_CY21M008 S SRIVIDYA.jpg"),
+    },
+    {
+      Name: "UTHRADEVI",
+      Award: "Civil Engineering Excellence Award",
+      Details: "Recognized for outstanding achievements in Civil Engineering",
+      Image: require("~/assets/five/15_CE18D006 UTHRADEVI.jpeg"),
+    },
+  ],
+  four: [
+    {
+      Name: "Soumitro Vyapari",
+      Award: "President’s Prize",
+      Details: "Best academic performance in the B.Tech Programme",
+      Image: require("~/assets/four/1_EE18B032_Soumitro Vyapari.jpg"),
+    },
+
+    {
+      Name: "Prabhat Reddy Lanki Reddy",
+      Award: "Governor’s Prize",
+      Details:
+        "All-round proficiency in curricular and extracurricular activities in the B.Tech Programme",
+      Image: require("~/assets/four/2_EE18B022_Prabhat Reddy.jpg"),
+    },
+
+    {
+      Name: "Keshav Kumar",
+      Award: "Prof. Kamatam Krishnaiah Award",
+      Details:
+        "Best academic performance in the B.Tech Programme in Chemical Engineering",
+      Image: require("~/assets/four/3_CH18B014_ KESHAV KUMAR.jpeg"),
+    },
+    {
+      Name: "Dasari Yashwanthi",
+      Award: "Aarvee Associates Prize",
+      Details:
+        "Best academic performance in the B.Tech Programme in Civil Engineering",
+      Image: require("~/assets/four/4_CE18B009_dasari yashwanthi.jpg"),
+    },
+
+    {
+      Name: "Jay Chordia",
+      Award: "Institute Prize",
+      Details:
+        "Best academic performance in the M.Tech Programme in Civil Engineering",
+      Image: require("~/assets/four/5_CE20M003 - Jay Chordia.png"),
+    },
+    {
+      Name: "W Pranathi ",
+      Award: "Institute Prize",
+      Details:
+        "Best academic performance in the B.Tech Programme in Computer Science and Engineering",
+      Image: require("~/assets/four/6_CS18B045_ Pranathi Wuppuluru.png"),
+    },
+    {
+      Name: "Prantik Parashar Sarmah",
+      Award: "Ramakrishnan & Lakshmikanthan Memorial Prize",
+      Details:
+        "Best academic performance in the M.Tech Programme in Computer Science and Engineering",
+      Image: require("~/assets/four/7_CS20M010 PRANTIK PARASHAR SARMAH.jpg"),
+    },
+
+    {
+      Name: "Soumitro Vyapari",
+      Award: "Amara Raja Prize",
+      Details:
+        "Best academic performance in the B.Tech Programme in Electrical Engineering",
+      Image: require("~/assets/four/8_EE18B032_Soumitro Vyapari.jpg"),
+    },
+
+    {
+      Name: "Sirigi Reddy Bhargav Reddy ",
+      Award: "Institute Prize",
+      Details:
+        "Best academic performance in the M.Tech Programme in Electrical Engineering",
+      Image: require("~/assets/four/9_EE20M010_Bhargav Reddy SIRIGIREDDY.jpg"),
+    },
+
+    {
+      Name: "Sibibalan Jeevanandam",
+      Award: "ITC Ltd. Prize",
+      Details:
+        "Best academic performance in the B.Tech Programme in Mechanical Engineering",
+      Image: require("~/assets/four/10_ME18B031_Sibibalan.jpg"),
+    },
+
+    {
+      Name: "Rajbir Singh Bajwa",
+      Award: "Institute Prize",
+      Details:
+        "Best academic performance in the M.Tech Programme in Mechanical Engineering",
+      Image: require("~/assets/four/11_ME20M016 Rajbir Singh Bajwa.jpg"),
+    },
+
+    {
+      Name: "Nayan Jain",
+      Award: "Institute Prize",
+      Details:
+        "Best academic performance in the M.Sc Programme in Mathematics and Statistics",
+      Image: require("~/assets/four/12_MA20M007 - Nayan Jain.jpg"),
+    },
+
+    {
+      Name: "Tushti Patel",
+      Award: "Prof. T Srinivasan Natarajan Award",
+      Details: "Best academic performance in the M.Sc Programme in Physics",
+      Image: require("~/assets/four/13_PH20M014_Tushti P.jpg"),
+    },
+
+    {
+      Name: "Sumedha Gupta",
+      Award: "Institute Prize",
+      Details: "Best academic performance in the M.Sc Programme in Chemistry",
+      Image: require("~/assets/four/14_CY20M014_Sumedha Gupta.jpg"),
+    },
+
+    {
+      Name: "Spoorthi G E",
+      Award: "Institute Prize",
+      Details:
+        "Best M.S. (Research) thesis entitled NOVEL PHASE UNWRAPPING TECHNIQUES BASED ON DEEP LEARNING FRAMEWORKS",
+      Image: require("~/assets/four/15_EE17S005_Spoorthi GE.png"),
+    },
+  ],
 };

@@ -1,8 +1,10 @@
 import { Stack } from "expo-router";
+import { useRouteInfo } from "expo-router/build/hooks";
 import React from "react";
 import { Image } from "react-native";
 
 export default function Layout() {
+  const routeInfo = useRouteInfo();
   return (
     <Stack>
       <Stack.Screen
@@ -76,6 +78,21 @@ export default function Layout() {
         name="award"
         options={{
           headerTitle: "Awards",
+          headerRight: () => (
+            <Image
+              source={require("../../../assets/IITT-logo.png")}
+              style={{ width: 80, height: 50 }}
+            />
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="speech"
+        options={{
+          headerTitle:
+            routeInfo.params.speechType === "Director"
+              ? "Director's Report"
+              : "Chief Guest",
           headerRight: () => (
             <Image
               source={require("../../../assets/IITT-logo.png")}

@@ -10,6 +10,7 @@ import {
   Dimensions,
   Platform,
   ScrollView,
+  StyleSheet,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -17,35 +18,25 @@ import { themeColors } from "../../../themes/index";
 
 import { ConvocationProgram } from "~/constants";
 
-const { width, height } = Dimensions.get("window");
 const ios = Platform.OS == "ios";
 
-const Cards = (img) => {
-  console.log(img);
+const Table = ({ jsonData }) => {
+  console.log(jsonData);
   return (
-    <View
-      className="flex-1 flex-col items-center bg-white m-5 p-4"
-      style={{
-        width: width * 0.7,
-        height: height * 0.45,
-        elevation: 5,
-        borderRadius: 10,
-        borderColor: themeColors.bgDark,
-        borderWidth: 2,
-        overflow: "hidden",
-      }}
-    >
-      <ReactNativeZoomableView>
-        <Image
-          source={img.img}
-          resizeMode="contain"
-          style={{
-            width: width * 0.6,
-            height: height * 0.4,
-          }}
-        />
-      </ReactNativeZoomableView>
-      <Text className="text-xs text-gray-500 mt-2">Double Tap To Zoom</Text>
+    <View style={styles.container}>
+      {/* Table header */}
+      <View style={styles.row}>
+        <Text style={[styles.headerCell, { width: "25%" }]}>Role</Text>
+        <Text style={[styles.headerCell, { width: "75%", flex:1 }]}>Name</Text>
+      </View>
+
+      {/* Table rows */}
+      {jsonData.map((item, index) => (
+        <View key={index} style={[styles.row]}>
+          <Text style={[styles.cell, { width: "25%" }]}>{item["role"]}</Text>
+          <Text style={[styles.cell, { width: "75%", flex:1 }]}>{item["name"]}</Text>
+        </View>
+      ))}
     </View>
   );
 };
@@ -54,6 +45,8 @@ export default function Landing() {
   const params = useLocalSearchParams();
   const id = Number(params.id);
   const data = ConvocationProgram.find((item) => item.id === id);
+  const jsonData = data.json;
+  console.log(jsonData);
 
   return (
     <ScrollView className="flex-1">
@@ -90,23 +83,44 @@ export default function Landing() {
             </View>
           )}
         </View>
+        {Object.keys(jsonData).map((category) => (
+          <View key={category}>
+            <Text className="text-black text-2xl text-center mt-5 font-bold">{category}</Text>
 
-        <View className="px-4 flex-row justify-center items-center">
-          <Text
-            style={{ color: themeColors.text }}
-            className="text-3xl font-semibold text-center"
-          >
-            {data.title}
-          </Text>
-        </View>
-
-        <View className="flex-col items-center justify-center">
-          {data?.images?.map((item, index) => {
-            console.log(item);
-            return <Cards key={index} img={item} />;
-          })}
-        </View>
+            <Table jsonData={jsonData[category]} />
+          </View>
+        ))}
       </SafeAreaView>
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 10,
+    // backgroundColor: "#fff",
+    borderRadius: 10,
+    margin: 10,
+    backgroundColor: themeColors.bgDark,
+  },
+  row: {
+    flexDirection: "row",
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+    paddingVertical: 5,
+  },
+  headerCell: {
+    // flex: 1,
+    fontWeight: "bold",
+    textAlign: "center",
+    margin: 5,
+    color: themeColors.bgLight,
+  },
+  cell: {
+    // flex: 1,
+    textAlign: "center",
+    margin: 5,
+    color: themeColors.bgLight,
+  },
+});
